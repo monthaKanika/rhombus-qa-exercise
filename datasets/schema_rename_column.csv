@@ -1,0 +1,1051 @@
+order_id,customer_name,email,age,country,order_date,order_amount_usd,status
+10456,elena patel,elena.patel456@example.com,79,AUSTRALIA,2025-11-02,25.68,refunded
+10715,  Ivy Smith ,ivy.smith715@example.com,65,  Brazil ,08-09-2025,86.08,refunded
+10648,HIRO KIM,hiro.kim648@example.com,42,  Canada ,03 May 2026,135.0,refunded
+10513,BEN OKAFOR,ben.okafor513@example.com,80,vietnam,07-23-2025,338.23,pending
+10253,diego silva,diego.silva253@example.com,34,  Brazil ,18 Jul 2026,88.28,pending
+10185,  Ben Nguyen ,ben.nguyen185@example.com,51,Brazil,07-10-2025,388.61,refunded
+10759,Jon Rossi,jon.rossi759@example.com,63,Nigeria,08-20-2025,140.32,refunded
+10439,  Elena Nguyen ,missing-at.com,44,canada,2026-01-26,11.42,pending
+10708,farid okafor,farid.okafor708@example.com,46,NIGERIA,06-01-2025,65.14,paid
+10203,  Aisha Kim ,aisha.kim203@example.com,36,Nigeria,2026-05-22,218.31,pending
+10597,CHEN KIM,chen.kim597@example.com,79,brazil,2026-08-10,51.1,pending
+10582,HIRO PATEL,hiro.patel582@example.com,150,  Australia ,2025-06-17,463.09,pending
+10402,Ivy Garcia,ivy.garcia402@example.com,58,CANADA,19/01/2025,348.29,pending
+10999,Ivy Silva,ivy.silva999@example.com,66,India,07/03/2025,431.69,refunded
+10536,  Diego Smith ,diego.smith536@example.com,38,AUSTRALIA,08-30-2025,-49.99,pending
+10344,hiro patel,hiro.patel344@example.com,25,  Australia ,2025-04-05,88.15,refunded
+10055,HIRO SILVA,hiro.silva55@example.com,71,canada,23 Sep 2025,315.24,pending
+10395,elena brown,elena.brown395@example.com,59,AUSTRALIA,07-07-2025,115.55,pending
+10126,Grace Brown,grace.brown126@example.com,48,brazil,2025-04-27,228.74,paid
+10151,  Ivy Smith ,ivy.smith151@example.com,46,Australia,11-14-2025,416.69,paid
+10968,Elena Rossi,elena.rossi968@example.com,0,CANADA,2026-03-28,150.1,pending
+10748,  Ivy Nguyen ,ivy.nguyen748@example.com,74,,02 Feb 2025,160.71,pending
+10727,BEN GARCIA,ben.garcia727@example.com,71,India,08 Jun 2025,232.94,paid
+10863,Grace Smith,grace.smith863@example.com,38,  Brazil ,2025-10-03,244.66,pending
+10709,  Grace Silva ,,77,VIETNAM,2025-05-29,485.22,refunded
+10965,Hiro Nguyen,hiro.nguyen965@example.com,67,  Canada ,10 Apr 2025,328.99,refunded
+10109,diego rossi,diego.rossi109@example.com,54,vietnam,2026-08-09,489.08,refunded
+10347,hiro nguyen,hiro.nguyen347@example.com,42,  India ,31/03/2025,323.11,refunded
+10389,FARID SILVA,farid.silva389@example.com,47,  Vietnam ,2025-09-16,9999999,refunded
+10819,grace rossi,grace.rossi819@example.com,20,  Brazil ,23 May 2026,259.11,refunded
+10975,Farid Nguyen,farid.nguyen975@example.com,80,canada,04 Jan 2026,120.61,pending
+10761,  Farid Garcia ,farid.garcia761@example.com,34,  Nigeria ,01/03/2026,441.04,refunded
+10444,FARID SMITH,farid.smith444@example.com,79,,22/11/2025,,refunded
+10954,GRACE BROWN,grace.brown954@example.com,70,Brazil,20 Mar 2026,216.56,paid
+10994,Grace Garcia,grace.garcia994@example.com,33,  Brazil ,02-04-2025,345.55,paid
+10583,Diego Garcia,diego.garcia583@example.com,29,  Brazil ,07-29-2025,,paid
+10497,jon silva,jon.silva497@example.com,79,  Brazil ,2025-09-07,0,pending
+10950,  Ivy Okafor ,john@@example,58,Australia,07 Jul 2025,39.64,paid
+10015,Elena Brown,elena.brown15@example.com,73,canada,02/07/2025,9999999,paid
+10742,Jon Smith,jon.smith742@example.com,41,india,22/06/2025,,pending
+10711,Hiro Nguyen,hiro.nguyen711@example.com,37,  Australia ,23/05/2025,225.76,paid
+10195,Jon Okafor,jon.okafor195@example.com,70,Australia,2026-08-01,474.53,refunded
+10420,ELENA OKAFOR,,80,canada,2025-01-13,219.26,refunded
+10399,chen smith,chen.smith399@example.com,58,india,2026-05-15,7.33,pending
+10452,ben khan,ben.khan452@example.com,44,  Brazil ,22 Aug 2025,219.35,paid
+10193,ELENA SMITH,elena.smith193@example.com,58,nigeria,14/09/2025,314.39,refunded
+10102,Farid Khan,farid.khan102@example.com,72,  Vietnam ,02-12-2026,,pending
+10543,Ivy Rossi,ivy.rossi543@example.com,57,VIETNAM,07-09-2025,361.9,refunded
+10528,Chen Patel,chen.patel528@example.com,58,  Brazil ,10-24-2025,351.73,pending
+10687,JON PATEL,jon.patel687@example.com,23,  Brazil ,24/06/2025,297.83,pending
+10778,ben okafor,ben.okafor778@example.com,47,Canada,2026-03-07,322.48,paid
+10060,  Farid Rossi ,farid.rossi60@example.com,76,India,19 Jun 2025,297.99,refunded
+10388,CHEN KHAN,chen.khan388@example.com,34,nigeria,01-09-2025,-49.99,pending
+10164,  Hiro Silva ,hiro.silva164@example.com,50,  Nigeria ,16/10/2025,409.36,refunded
+10494,Ivy Nguyen,ivy.nguyen494@example.com,53,vietnam,03-12-2025,-49.99,pending
+10780,CHEN GARCIA,,72,  Nigeria ,06-13-2026,228.49,refunded
+10692,AISHA SILVA,aisha.silva692@example.com,63,Brazil,09 Nov 2025,234.56,paid
+10905,  Jon Smith ,,66,canada,21 Jun 2025,261.85,paid
+10871,Chen Nguyen,chen.nguyen871@example.com,75,AUSTRALIA,03 May 2026,280.12,refunded
+10286,BEN PATEL,ben.patel286@example.com,53,india,07 Sep 2025,479.44,paid
+10275,jon patel,jon.patel275@example.com,56,CANADA,04 Nov 2025,160.52,pending
+10345,Grace Rossi,grace.rossi345@example.com,42,  Canada ,24/05/2026,180.2,paid
+10423,  Aisha Brown ,not-an-email,43,India,17 Aug 2025,224.87,refunded
+10066,Ben Patel,ben.patel66@example.com,55,australia,15 Nov 2025,201.34,refunded
+10681,  Chen Patel ,chen.patel681@example.com,50,Australia,30/01/2025,362.09,refunded
+10763,Jon Rossi,jon.rossi763@example.com,51,india,03 Aug 2026,78.13,paid
+10791,Farid Patel,farid.patel791@example.com,55,india,27/07/2026,254.35,pending
+10120,ben silva,ben.silva120@example.com,20,canada,22/02/2026,224.47,paid
+10807,ben nguyen,john@@example,80,,10/06/2026,465.68,refunded
+10485,IVY NGUYEN,ivy.nguyen485@example.com,62,  Vietnam ,01-20-2026,57.76,pending
+10295,  Hiro Rossi ,hiro.rossi295@example.com,63,  Brazil ,19/05/2026,45.92,paid
+10298,  Hiro Brown ,hiro.brown298@example.com,24,CANADA,08-12-2025,438.03,paid
+10434,diego garcia,diego.garcia434@example.com,61,VIETNAM,03/08/2025,254.43,refunded
+10872,Hiro Rossi,hiro.rossi872@example.com,68,Canada,2026-07-06,446.82,refunded
+10665,Hiro Garcia,hiro.garcia665@example.com,30,AUSTRALIA,24 May 2025,197.44,refunded
+10121,farid smith,farid.smith121@example.com,21,brazil,12/01/2026,484.26,pending
+10386,  Ben Kim ,,21,INDIA,29/01/2025,325.45,refunded
+10003,  Ivy Rossi ,ivy.rossi3@example.com,55,Vietnam,14/08/2025,350.58,pending
+10170,  Ivy Khan ,ivy.khan170@example.com,25,VIETNAM,06-25-2026,65.31,paid
+10506,Diego Rossi,diego.rossi506@example.com,38,,18/08/2026,276.54,paid
+10002,AISHA SMITH,aisha.smith2@example.com,50,Nigeria,12/08/2025,359.43,refunded
+10912,ivy brown,ivy.brown912@example.com,77,India,2025-03-22,40.32,paid
+10693,  Grace Patel ,grace.patel693@example.com,63,Canada,2026-01-15,195.52,refunded
+10934,Hiro Silva,hiro.silva934@example.com,53,,11 Mar 2025,74.43,pending
+10754,Diego Garcia,diego.garcia754@example.com,76,Canada,11-16-2025,,paid
+10088,ELENA NGUYEN,elena.nguyen88@example.com,79,Canada,04-04-2025,290.24,paid
+10241,AISHA SILVA,aisha.silva241@example.com,65,  Australia ,19 Feb 2025,121.0,paid
+10245,IVY SILVA,ivy.silva245@example.com,37,CANADA,04 Sep 2025,457.8,refunded
+10669,Chen Nguyen,chen.nguyen669@example.com,75,Vietnam,26 Jun 2025,307.56,refunded
+10961,CHEN KIM,chen.kim961@example.com,34,INDIA,2026-04-12,62.78,paid
+10320,  Ivy Kim ,ivy.kim320@example.com,45,  Canada ,2026-05-29,322.07,refunded
+10004,elena patel,elena.patel4@example.com,24,  Australia ,2025-08-09,182.69,pending
+10688,ELENA NGUYEN,elena.nguyen688@example.com,33,,15/03/2026,446.45,refunded
+10537,  Diego Nguyen ,diego.nguyen537@example.com,62,NIGERIA,02-13-2025,386.54,paid
+10870,hiro kim,hiro.kim870@example.com,39,  India ,09-09-2025,12.86,refunded
+10859,ivy okafor,ivy.okafor859@example.com,23,Australia,27/01/2026,146.25,paid
+10032,Elena Silva,elena.silva32@example.com,18,Brazil,2025-11-20,271.13,refunded
+10306,hiro kim,hiro.kim306@example.com,39,NIGERIA,27 Nov 2025,,refunded
+10592,Hiro Kim,hiro.kim592@example.com,75,INDIA,2025-07-05,313.17,pending
+10136,jon brown,jon.brown136@example.com,19,india,01-27-2025,461.16,pending
+10769,Chen Garcia,chen.garcia769@example.com,51,canada,25 Apr 2025,442.86,paid
+10813,  Jon Kim ,jon.kim813@example.com,52,Australia,19 Apr 2025,62.76,paid
+10309,chen nguyen,chen.nguyen309@example.com,64,CANADA,10 Feb 2026,329.47,refunded
+10489,Grace Okafor,grace.okafor489@example.com,28,Brazil,2026-07-18,,pending
+10038,Ben Patel,ben.patel38@example.com,71,VIETNAM,13 Jul 2026,68.09,pending
+10806,  Hiro Kim ,hiro.kim806@example.com,23,brazil,31/07/2026,219.88,pending
+10182,BEN ROSSI,ben.rossi182@example.com,78,AUSTRALIA,08 Jan 2026,22.23,paid
+10972,FARID OKAFOR,farid.okafor972@example.com,78,  Vietnam ,19 Nov 2025,307.35,pending
+10917,  Grace Rossi ,grace.rossi917@example.com,46,Nigeria,08-03-2025,73.78,paid
+10578,BEN PATEL,,150,australia,22 Nov 2025,480.79,pending
+10614,  Jon Smith ,jon.smith614@example.com,74,Australia,12-08-2025,16.13,pending
+10851,grace nguyen,grace.nguyen851@example.com,31,  India ,2025-11-09,65.55,pending
+10832,  Ben Garcia ,ben.garcia832@example.com,67,AUSTRALIA,26 Mar 2026,173.95,refunded
+10251,hiro okafor,hiro.okafor251@example.com,38,Brazil,28/07/2025,371.92,paid
+10139,JON SMITH,jon.smith139@example.com,28,Nigeria,2025-02-23,139.69,refunded
+10792,hiro patel,hiro.patel792@example.com,63,  Nigeria ,02/04/2025,133.9,pending
+10019,diego kim,diego.kim19@example.com,46,  Nigeria ,2026-02-13,127.71,paid
+10034,Elena Khan,elena.khan34@example.com,60,nigeria,2026-06-26,469.77,paid
+10750,Elena Rossi,elena.rossi750@example.com,54,  Canada ,15 May 2026,,paid
+10804,BEN NGUYEN,ben.nguyen804@example.com,42,brazil,02/08/2025,64.7,pending
+10338,BEN PATEL,,46,brazil,19 Apr 2025,64.76,pending
+10413,Hiro Patel,hiro.patel413@example.com,64,Canada,04-03-2025,323.95,pending
+10393,GRACE NGUYEN,grace.nguyen393@example.com,39,CANADA,21 Aug 2026,453.73,refunded
+10849,Ben Khan,ben.khan849@example.com,25,vietnam,2026-02-23,263.77,paid
+10213,  Farid Silva ,farid.silva213@example.com,38,  India ,06-23-2026,275.41,refunded
+10652,  Aisha Smith ,aisha.smith652@example.com,24,Nigeria,13 Jan 2025,179.0,refunded
+10012,Ivy Silva,ivy.silva12@example.com,73,AUSTRALIA,04/04/2025,397.08,pending
+10646,  Jon Patel ,jon.patel646@example.com,67,BRAZIL,23 May 2026,364.37,paid
+10835,Chen Nguyen,chen.nguyen835@example.com,23,vietnam,14 Jun 2026,491.06,paid
+10550,  Jon Patel ,jon.patel550@example.com,65,australia,26 Jul 2026,352.76,pending
+10359,AISHA PATEL,aisha.patel359@example.com,58,Nigeria,22 Nov 2025,74.62,refunded
+10814,  Hiro Silva ,hiro.silva814@example.com,37,nigeria,19 Feb 2026,403.3,paid
+10130,BEN SMITH,ben.smith130@example.com,45,BRAZIL,19 Jul 2026,172.77,pending
+10080,Elena Silva,elena.silva80@example.com,43,Brazil,2025-04-27,80.1,refunded
+10411,  Ivy Garcia ,ivy.garcia411@example.com,36,India,02 Jan 2026,455.63,refunded
+10029,AISHA KHAN,aisha.khan29@example.com,21,Nigeria,04/05/2026,38.92,paid
+10005,  Jon Kim ,,52,  Australia ,2025-02-14,278.26,refunded
+10568,ivy garcia,ivy.garcia568@example.com,53,BRAZIL,2025-07-28,191.42,refunded
+10044,elena patel,elena.patel44@example.com,20,  Australia ,08-18-2026,365.63,pending
+10672,aisha khan,aisha.khan672@example.com,22,australia,27/06/2025,379.99,paid
+10907,JON NGUYEN,jon.nguyen907@example.com,75,  India ,01/08/2025,200.97,pending
+10663,ben okafor,ben.okafor663@example.com,23,brazil,02/07/2026,92.43,paid
+10823,FARID KHAN,farid.khan823@example.com,74,  Vietnam ,25 Apr 2026,417.37,refunded
+10310,  Ben Nguyen ,ben.nguyen310@example.com,22,INDIA,07 Aug 2025,9.6,refunded
+10246,GRACE ROSSI,grace.rossi246@example.com,42,india,25/07/2026,,paid
+10398,AISHA PATEL,,39,  Brazil ,21/05/2025,161.61,refunded
+10429,DIEGO SMITH,diego.smith429@example.com,47,india,2026-02-07,379.79,paid
+10643,  Jon Nguyen ,jon.nguyen643@example.com,23,India,10-21-2025,129.77,refunded
+10822,  Chen Kim ,chen.kim822@example.com,40,BRAZIL,16/07/2025,295.89,refunded
+10548,grace okafor,grace.okafor548@example.com,51,Australia,03-01-2025,,paid
+10081,Elena Smith,elena.smith81@example.com,53,BRAZIL,12 Sep 2025,228.0,pending
+10372,Grace Khan,grace.khan372@example.com,0,  Brazil ,21 Aug 2025,288.49,paid
+10765,  Chen Kim ,chen.kim765@example.com,33,AUSTRALIA,30/08/2025,,pending
+10190,  Hiro Brown ,hiro.brown190@example.com,70,Nigeria,25/02/2026,486.33,refunded
+10460,  Ben Garcia ,ben.garcia460@example.com,78,vietnam,18/08/2026,337.29,paid
+10503,aisha silva,aisha.silva503@example.com,49,nigeria,16 Jan 2026,95.52,refunded
+10059,ELENA ROSSI,elena.rossi59@example.com,49,india,06 Mar 2026,245.39,pending
+10534,  Ben Brown ,ben.brown534@example.com,42,canada,08-02-2025,83.51,refunded
+10746,GRACE KHAN,grace.khan746@example.com,37,,2025-12-01,332.23,refunded
+10373,  Hiro Kim ,not-an-email,75,Canada,22/03/2025,64.54,pending
+10606,HIRO SILVA,hiro.silva606@example.com,48,  India ,02-06-2025,233.92,pending
+10789,Grace Khan,grace.khan789@example.com,24,Nigeria,2025-09-20,169.77,paid
+10321,Jon Patel,jon.patel321@example.com,37,AUSTRALIA,12/10/2025,270.51,pending
+10045,Grace Khan,grace.khan45@example.com,42,NIGERIA,06-08-2026,26.97,pending
+10731,  Ben Nguyen ,ben.nguyen731@example.com,-5,India,2026-05-11,397.56,refunded
+10644,Elena Kim,,65,AUSTRALIA,21/09/2025,331.28,pending
+10415,Farid Rossi,farid.rossi415@example.com,72,Australia,29/04/2025,333.36,paid
+10230,  Farid Rossi ,farid.rossi230@example.com,66,NIGERIA,17/07/2026,341.77,refunded
+10959,diego rossi,diego.rossi959@example.com,50,  Canada ,09-19-2025,349.75,refunded
+10355,chen okafor,chen.okafor355@example.com,21,AUSTRALIA,01/07/2025,388.31,refunded
+10930,diego patel,diego.patel930@example.com,60,AUSTRALIA,08 Oct 2025,208.58,refunded
+10042,diego garcia,diego.garcia42@example.com,37,INDIA,2026-04-17,331.72,pending
+10491,grace rossi,grace.rossi491@example.com,63,Nigeria,18/06/2026,321.94,pending
+10733,BEN SMITH,ben.smith733@example.com,29,canada,2025-07-30,49.94,refunded
+10963,  Elena Brown ,elena.brown963@example.com,55,  Vietnam ,2026-06-30,59.09,refunded
+10084,Jon Silva,jon.silva84@example.com,32,,26 Oct 2025,40.23,paid
+10013,  Jon Smith ,jon.smith13@example.com,56,brazil,2026-01-30,341.74,paid
+10254,  Chen Patel ,chen.patel254@example.com,29,Nigeria,2026-07-14,420.34,paid
+10668,  Ben Nguyen ,ben.nguyen668@example.com,59,  Australia ,2025-05-25,125.13,refunded
+10535,Aisha Brown,aisha.brown535@example.com,34,brazil,18/06/2026,183.41,paid
+10802,Jon Patel,jon.patel802@example.com,69,canada,08-05-2025,400.08,refunded
+10210,Jon Khan,jon.khan210@example.com,55,BRAZIL,22 Aug 2025,78.15,refunded
+10251,hiro okafor,hiro.okafor251@example.com,38,Brazil,28/07/2025,371.92,paid
+10092,  Ivy Nguyen ,ivy.nguyen92@example.com,44,AUSTRALIA,07-10-2026,313.2,pending
+10892,IVY OKAFOR,ivy.okafor892@example.com,27,brazil,11-15-2025,-49.99,paid
+10478,HIRO SILVA,hiro.silva478@example.com,71,BRAZIL,24/06/2025,313.49,refunded
+10471,ben brown,ben.brown471@example.com,55,NIGERIA,08 Oct 2025,,pending
+10962,Grace Rossi,grace.rossi962@example.com,51,  India ,24/08/2026,415.73,pending
+10919,Ivy Kim,ivy.kim919@example.com,54,AUSTRALIA,30/11/2025,0,pending
+10227,hiro kim,hiro.kim227@example.com,0,,12-04-2025,328.57,refunded
+10758,Grace Garcia,grace.garcia758@example.com,71,NIGERIA,05-24-2026,136.25,pending
+10674,Jon Rossi,jon.rossi674@example.com,74,Brazil,2025-06-11,8.58,paid
+10931,Ben Okafor,ben.okafor931@example.com,50,  Vietnam ,20 Mar 2025,86.6,paid
+10594,  Hiro Silva ,john@@example,23,Nigeria,24/02/2026,441.67,pending
+10146,BEN ROSSI,ben.rossi146@example.com,45,  Nigeria ,2025-04-19,200.9,pending
+10056,HIRO SMITH,hiro.smith56@example.com,35,vietnam,2025-10-20,73.5,paid
+10260,Elena Smith,elena.smith260@example.com,43,  Brazil ,02 Feb 2025,32.78,paid
+10172,GRACE NGUYEN,grace.nguyen172@example.com,54,BRAZIL,2025-12-28,264.12,pending
+10111,JON OKAFOR,jon.okafor111@example.com,57,VIETNAM,2025-08-13,,refunded
+10645,  Chen Kim ,missing-at.com,29,Nigeria,08-30-2025,492.12,paid
+10922,  Ivy Patel ,ivy.patel922@example.com,19,INDIA,2025-02-02,456.12,pending
+10966,grace patel,grace.patel966@example.com,29,CANADA,30/06/2025,245.8,refunded
+10685,hiro garcia,hiro.garcia685@example.com,30,,2026-01-03,-49.99,paid
+10134,aisha kim,aisha.kim134@example.com,24,NIGERIA,16/11/2025,330.08,paid
+10518,Ben Smith,ben.smith518@example.com,19,Brazil,2026-04-30,134.91,paid
+10373,  Hiro Kim ,not-an-email,75,Canada,22/03/2025,64.54,pending
+10569,IVY NGUYEN,ivy.nguyen569@example.com,21,VIETNAM,09-19-2025,31.28,refunded
+10042,diego garcia,diego.garcia42@example.com,37,INDIA,2026-04-17,331.72,pending
+10462,jon patel,jon.patel462@example.com,69,  Vietnam ,03/08/2026,7.39,paid
+10089,hiro brown,hiro.brown89@example.com,29,  Nigeria ,29 Mar 2026,484.68,pending
+10997,  Jon Patel ,jon.patel997@example.com,59,  Canada ,01-29-2026,287.85,paid
+10191,ben silva,ben.silva191@example.com,26,NIGERIA,23/04/2026,219.15,paid
+10970,Aisha Nguyen,aisha.nguyen970@example.com,60,Nigeria,2025-09-30,9999999,paid
+10101,Ben Brown,ben.brown101@example.com,64,  India ,13/04/2026,42.04,pending
+10565,farid okafor,farid.okafor565@example.com,28,  Vietnam ,25/01/2025,223.03,paid
+10512,hiro smith,hiro.smith512@example.com,34,vietnam,04-06-2026,175.35,pending
+10294,Jon Nguyen,jon.nguyen294@example.com,49,INDIA,03 Jan 2026,482.1,refunded
+10865,BEN BROWN,ben.brown865@example.com,41,NIGERIA,28/07/2025,271.08,pending
+10660,aisha nguyen,aisha.nguyen660@example.com,27,canada,04 Feb 2026,289.45,refunded
+10904,DIEGO NGUYEN,diego.nguyen904@example.com,72,  Nigeria ,14/10/2025,365.01,pending
+10195,Jon Okafor,jon.okafor195@example.com,70,Australia,2026-08-01,474.53,refunded
+10466,Grace Khan,,53,  Vietnam ,06/08/2025,186.08,paid
+10288,aisha garcia,aisha.garcia288@example.com,66,Canada,2025-07-30,400.75,refunded
+10846,  Farid Brown ,john@@example,73,  Vietnam ,17 Feb 2026,498.27,refunded
+10377,Jon Khan,jon.khan377@example.com,77,Australia,08-20-2026,434.4,pending
+10553,ivy garcia,ivy.garcia553@example.com,41,  Brazil ,20 Jan 2026,5.1,paid
+10354,Diego Khan,diego.khan354@example.com,51,Brazil,08-13-2025,459.36,paid
+10346,ELENA KIM,elena.kim346@example.com,20,NIGERIA,04-02-2026,251.95,refunded
+10697,IVY SMITH,,66,CANADA,05-05-2026,179.59,pending
+10243,ivy garcia,,35,AUSTRALIA,28 Feb 2026,280.15,paid
+10833,chen smith,chen.smith833@example.com,63,brazil,30/09/2025,80.05,refunded
+10882,DIEGO ROSSI,diego.rossi882@example.com,30,india,03-18-2025,36.11,refunded
+10523,elena okafor,elena.okafor523@example.com,27,Vietnam,2026-02-27,264.04,paid
+10011,  Ivy Brown ,ivy.brown11@example.com,75,  Nigeria ,09-27-2025,113.56,paid
+10515,  Grace Khan ,grace.khan515@example.com,72,Australia,09/08/2026,175.09,pending
+10876,  Farid Nguyen ,farid.nguyen876@example.com,75,CANADA,2025-10-15,102.06,refunded
+10628,  Jon Rossi ,jon.rossi628@example.com,59,Canada,2025-12-02,112.72,paid
+10657,AISHA KIM,aisha.kim657@example.com,46,  Australia ,29/09/2025,307.1,paid
+10635,  Aisha Patel ,aisha.patel635@example.com,80,,14/05/2026,322.91,pending
+10712,FARID NGUYEN,farid.nguyen712@example.com,68,VIETNAM,2025-07-19,46.38,pending
+10649,  Grace Nguyen ,grace.nguyen649@example.com,42,canada,2025-10-23,53.2,refunded
+10634,  Ivy Rossi ,ivy.rossi634@example.com,27,VIETNAM,04/01/2026,10.74,refunded
+10437,Elena Kim,elena.kim437@example.com,62,VIETNAM,2025-05-30,182.55,pending
+10736,diego brown,,62,NIGERIA,02 May 2026,338.4,paid
+10869,grace garcia,grace.garcia869@example.com,74,canada,06-01-2026,489.92,refunded
+10257,Ivy Rossi,ivy.rossi257@example.com,51,canada,01-13-2025,13.49,refunded
+10384,aisha okafor,aisha.okafor384@example.com,41,,2025-07-23,0,paid
+10923,elena garcia,elena.garcia923@example.com,60,Nigeria,27 Aug 2025,,refunded
+10824,FARID SILVA,farid.silva824@example.com,36,Canada,15 Jun 2025,68.9,paid
+10558,grace smith,grace.smith558@example.com,40,  Brazil ,2025-02-27,435.54,paid
+10740,Elena Rossi,john@@example,75,brazil,13/07/2025,11.33,refunded
+10707,  Farid Khan ,farid.khan707@example.com,34,VIETNAM,10/05/2025,283.43,paid
+10952,HIRO KIM,hiro.kim952@example.com,33,BRAZIL,18/06/2025,155.03,refunded
+10352,chen garcia,chen.garcia352@example.com,76,Nigeria,11-22-2025,474.04,refunded
+10408,hiro rossi,hiro.rossi408@example.com,48,CANADA,07/05/2025,349.12,refunded
+10274,  Aisha Rossi ,,69,  Vietnam ,12-07-2025,218.16,refunded
+10945,JON SILVA,jon.silva945@example.com,50,Nigeria,27/01/2026,15.5,paid
+10848,IVY BROWN,ivy.brown848@example.com,47,Brazil,01/05/2025,472.31,pending
+10626,Ivy Garcia,ivy.garcia626@example.com,65,  Canada ,2025-06-27,298.12,pending
+10958,Grace Silva,grace.silva958@example.com,44,Australia,12 Nov 2025,466.4,paid
+10397,  Jon Khan ,jon.khan397@example.com,74,,14 Mar 2025,267.27,pending
+10183,  Diego Okafor ,diego.okafor183@example.com,78,Nigeria,06/01/2026,341.14,pending
+10304,ben rossi,ben.rossi304@example.com,62,  Vietnam ,12 Jun 2026,167.01,paid
+10884,diego okafor,diego.okafor884@example.com,51,India,25 Feb 2025,383.23,refunded
+10901,GRACE SMITH,,37,BRAZIL,12-13-2025,405.7,refunded
+10261,  Chen Smith ,chen.smith261@example.com,59,Vietnam,2026-05-27,118.73,refunded
+10341,Elena Kim,elena.kim341@example.com,78,  Brazil ,28/06/2025,51.89,paid
+10985,DIEGO SILVA,diego.silva985@example.com,56,VIETNAM,2026-04-12,301.45,pending
+10888,  Jon Nguyen ,jon.nguyen888@example.com,47,Brazil,04-10-2026,327.21,refunded
+10054,hiro patel,hiro.patel54@example.com,78,  Brazil ,21 Apr 2026,,refunded
+10556,FARID KHAN,farid.khan556@example.com,34,Vietnam,13 Sep 2025,286.69,paid
+10366,diego rossi,diego.rossi366@example.com,60,vietnam,22/07/2026,52.48,pending
+10222,  Grace Patel ,grace.patel222@example.com,68,BRAZIL,02-07-2025,438.99,paid
+10254,  Chen Patel ,chen.patel254@example.com,29,Nigeria,2026-07-14,420.34,paid
+10629,JON NGUYEN,jon.nguyen629@example.com,46,nigeria,31 May 2025,309.71,pending
+10732,Jon Nguyen,jon.nguyen732@example.com,76,Vietnam,2026-04-26,154.31,paid
+10046,AISHA BROWN,aisha.brown46@example.com,41,,07-06-2026,313.46,refunded
+10811,  Ivy Nguyen ,john@@example,29,  India ,2025-04-27,46.23,refunded
+10990,IVY ROSSI,ivy.rossi990@example.com,38,Nigeria,04-10-2025,231.48,paid
+10703,  Diego Brown ,diego.brown703@example.com,55,vietnam,10 Dec 2025,298.71,refunded
+10735,AISHA BROWN,aisha.brown735@example.com,79,VIETNAM,2025-08-11,486.92,paid
+10710,  Ivy Okafor ,ivy.okafor710@example.com,75,VIETNAM,30 Oct 2025,172.65,paid
+10600,ivy smith,ivy.smith600@example.com,45,nigeria,05-11-2026,,refunded
+10416,farid okafor,farid.okafor416@example.com,74,Canada,03-25-2026,408.41,paid
+10762,  Ivy Patel ,ivy.patel762@example.com,31,  Canada ,08-14-2026,468.9,refunded
+10548,grace okafor,grace.okafor548@example.com,51,Australia,03-01-2025,,paid
+10433,ELENA SILVA,elena.silva433@example.com,44,nigeria,05-17-2025,357.38,refunded
+10623,CHEN KIM,,50,  Australia ,2025-12-23,166.31,refunded
+10021,diego smith,diego.smith21@example.com,22,NIGERIA,02-02-2025,336.14,paid
+10140,  Grace Silva ,grace.silva140@example.com,35,India,03-29-2026,,pending
+10432,  Ben Rossi ,ben.rossi432@example.com,44,NIGERIA,11-26-2025,201.95,pending
+11000,  Chen Nguyen ,chen.nguyen1000@example.com,69,Vietnam,2026-07-23,68.76,paid
+10079,ben nguyen,ben.nguyen79@example.com,48,  Brazil ,08-11-2026,96.26,paid
+10447,Jon Khan,jon.khan447@example.com,61,  Vietnam ,2025-09-07,196.01,refunded
+10894,DIEGO SMITH,diego.smith894@example.com,60,  Brazil ,12-16-2025,426.74,refunded
+10208,farid patel,farid.patel208@example.com,55,  Vietnam ,02-07-2026,240.07,paid
+10153,DIEGO OKAFOR,diego.okafor153@example.com,79,  Australia ,2026-05-03,406.43,pending
+10627,  Farid Brown ,farid.brown627@example.com,29,  Vietnam ,2025-04-10,301.14,refunded
+10119,  Ivy Patel ,ivy.patel119@example.com,41,  Canada ,02/02/2026,443.28,refunded
+10242,aisha patel,aisha.patel242@example.com,32,canada,05-31-2026,122.27,paid
+10053,AISHA SMITH,aisha.smith53@example.com,29,  Canada ,2026-03-12,280.92,paid
+10856,Diego Khan,diego.khan856@example.com,79,NIGERIA,09 Jul 2026,253.81,paid
+10487,IVY BROWN,ivy.brown487@example.com,0,  Nigeria ,05-10-2026,494.31,refunded
+10498,BEN ROSSI,ben.rossi498@example.com,69,  Vietnam ,08-14-2025,260.67,paid
+10723,Chen Okafor,chen.okafor723@example.com,35,  Vietnam ,06-17-2025,29.11,pending
+10844,JON PATEL,jon.patel844@example.com,24,VIETNAM,01-22-2026,229.88,paid
+10524,Farid Kim,missing-at.com,62,  Brazil ,04-26-2026,9.52,pending
+10362,  Grace Patel ,grace.patel362@example.com,74,brazil,28 Feb 2026,55.21,pending
+10422,IVY SILVA,ivy.silva422@example.com,22,brazil,23/05/2026,168.79,pending
+10228,  Diego Nguyen ,diego.nguyen228@example.com,37,,05-02-2025,346.69,refunded
+10941,BEN OKAFOR,ben.okafor941@example.com,18,brazil,2025-11-28,197.65,pending
+10360,ben garcia,ben.garcia360@example.com,28,Canada,12-22-2025,226.08,pending
+10300,FARID KHAN,farid.khan300@example.com,57,INDIA,15/03/2026,403.69,refunded
+10064,AISHA NGUYEN,aisha.nguyen64@example.com,71,AUSTRALIA,11/09/2025,67.48,refunded
+10353,  Chen Khan ,,52,VIETNAM,12 Jul 2025,23.79,paid
+10595,Jon Brown,jon.brown595@example.com,29,India,08-01-2025,23.18,paid
+10142,diego patel,,38,Australia,19 Sep 2025,374.77,paid
+10361,diego garcia,diego.garcia361@example.com,34,Australia,2025-03-11,196.04,refunded
+10037,aisha okafor,aisha.okafor37@example.com,28,  Canada ,14 May 2025,282.65,paid
+10636,HIRO KHAN,hiro.khan636@example.com,47,  Nigeria ,12 Mar 2026,195.43,paid
+10511,Elena Brown,elena.brown511@example.com,43,,2026-08-05,111.66,pending
+10862,Elena Rossi,elena.rossi862@example.com,30,INDIA,04 May 2025,256.77,refunded
+10502,Jon Okafor,jon.okafor502@example.com,25,  Australia ,2025-06-09,383.3,refunded
+10976,grace khan,grace.khan976@example.com,45,,25 Mar 2025,150.46,paid
+10581,  Hiro Patel ,hiro.patel581@example.com,63,canada,30/05/2026,426.8,pending
+10368,Jon Silva,jon.silva368@example.com,19,INDIA,07-24-2025,488.64,pending
+10974,ivy kim,ivy.kim974@example.com,46,  Nigeria ,12 Sep 2025,331.81,paid
+10632,aisha nguyen,aisha.nguyen632@example.com,25,Vietnam,28/07/2026,218.7,refunded
+10598,Farid Okafor,farid.okafor598@example.com,66,Brazil,01-24-2026,238.05,paid
+10459,  Jon Nguyen ,jon.nguyen459@example.com,59,Nigeria,07-17-2026,337.48,pending
+10470,  Diego Brown ,diego.brown470@example.com,48,Brazil,2026-01-05,490.39,pending
+10072,elena okafor,elena.okafor72@example.com,53,AUSTRALIA,2025-10-14,124.47,pending
+10984,FARID PATEL,farid.patel984@example.com,24,Brazil,17 Jun 2026,,pending
+10567,Elena Nguyen,elena.nguyen567@example.com,37,  Brazil ,2025-12-18,169.28,refunded
+10035,ELENA SMITH,elena.smith35@example.com,35,VIETNAM,04-20-2025,105.78,refunded
+10305,Ben Silva,ben.silva305@example.com,68,  Nigeria ,02/01/2026,484.22,paid
+10564,Grace Okafor,grace.okafor564@example.com,25,  Canada ,13 Aug 2026,,paid
+10107,  Hiro Kim ,john@@example,75,VIETNAM,2025-01-10,223.66,pending
+10586,  Aisha Garcia ,aisha.garcia586@example.com,43,vietnam,26 Oct 2025,87.41,pending
+10285,Hiro Silva,hiro.silva285@example.com,37,Australia,2025-11-23,425.34,refunded
+10509,  Elena Garcia ,elena.garcia509@example.com,72,BRAZIL,23/07/2026,401.02,refunded
+10039,FARID NGUYEN,farid.nguyen39@example.com,61,India,01-02-2026,391.16,pending
+10533,GRACE NGUYEN,grace.nguyen533@example.com,42,BRAZIL,2025-05-05,,refunded
+10154,Ben Brown,ben.brown154@example.com,33,  Canada ,26 Jun 2025,264.41,refunded
+10787,AISHA KIM,aisha.kim787@example.com,57,BRAZIL,09-26-2025,293.54,refunded
+10847,HIRO ROSSI,hiro.rossi847@example.com,50,  India ,16 Jun 2025,69.05,refunded
+10240,  Diego Smith ,diego.smith240@example.com,57,AUSTRALIA,02/02/2025,38.31,refunded
+10244,farid rossi,farid.rossi244@example.com,62,  Brazil ,22/06/2026,153.44,paid
+10831,  Elena Silva ,elena.silva831@example.com,64,AUSTRALIA,06-03-2026,170.63,paid
+10268,chen rossi,chen.rossi268@example.com,24,Australia,11-21-2025,225.14,pending
+10551,  Ben Patel ,ben.patel551@example.com,50,VIETNAM,04 Jul 2025,467.09,pending
+10404,elena kim,elena.kim404@example.com,45,CANADA,04-12-2026,498.09,pending
+10686,  Elena Patel ,elena.patel686@example.com,47,BRAZIL,04-24-2025,113.83,pending
+10026,AISHA SMITH,aisha.smith26@example.com,44,  Brazil ,31/08/2025,433.0,paid
+10143,CHEN ROSSI,chen.rossi143@example.com,50,nigeria,2026-06-30,201.55,refunded
+10838,  Elena Brown ,elena.brown838@example.com,46,CANADA,31 May 2025,350.25,refunded
+10218,Ivy Kim,ivy.kim218@example.com,57,CANADA,21/05/2025,30.13,refunded
+10946,ELENA GARCIA,elena.garcia946@example.com,57,Australia,15/03/2026,,pending
+10507,elena silva,elena.silva507@example.com,29,  Brazil ,18/12/2025,212.45,pending
+10713,BEN BROWN,ben.brown713@example.com,49,Vietnam,02-08-2026,201.79,refunded
+10566,Diego Okafor,diego.okafor566@example.com,25,Canada,09/06/2025,474.73,paid
+10985,DIEGO SILVA,diego.silva985@example.com,56,VIETNAM,2026-04-12,301.45,pending
+10935,Chen Patel,chen.patel935@example.com,29,Vietnam,19 Jan 2025,,refunded
+10326,ben silva,ben.silva326@example.com,21,BRAZIL,04-12-2026,82.87,paid
+10868,ivy khan,john@@example,23,Brazil,13/03/2025,363.91,pending
+10493,Diego Nguyen,diego.nguyen493@example.com,35,brazil,11 Jun 2025,205.7,paid
+10052,HIRO ROSSI,hiro.rossi52@example.com,63,  Canada ,13 Aug 2026,202.83,paid
+10082,elena khan,elena.khan82@example.com,54,Nigeria,2026-03-16,474.06,paid
+10531,grace kim,grace.kim531@example.com,47,Canada,05-26-2026,44.71,paid
+10086,ben nguyen,ben.nguyen86@example.com,56,,19 Jun 2025,66.56,refunded
+10821,  Grace Silva ,grace.silva821@example.com,57,canada,30 Apr 2025,350.27,paid
+10356,  Farid Smith ,farid.smith356@example.com,55,australia,01-18-2026,164.69,paid
+10118,ELENA ROSSI,elena.rossi118@example.com,20,australia,30 Apr 2025,62.48,paid
+10277,DIEGO KHAN,diego.khan277@example.com,61,Nigeria,13 Jul 2026,471.77,paid
+10793,aisha patel,aisha.patel793@example.com,65,  Vietnam ,05-27-2026,451.88,pending
+10273,  Farid Kim ,farid.kim273@example.com,56,NIGERIA,10 Sep 2025,57.95,pending
+10475,  Ben Silva ,ben.silva475@example.com,31,NIGERIA,06 May 2026,16.11,paid
+10269,BEN PATEL,missing-at.com,45,  Brazil ,2025-03-31,18.0,pending
+10561,  Ivy Smith ,ivy.smith561@example.com,36,BRAZIL,16/08/2025,171.4,pending
+10289,CHEN OKAFOR,chen.okafor289@example.com,47,australia,30 Nov 2025,266.22,refunded
+10956,  Hiro Kim ,hiro.kim956@example.com,22,VIETNAM,20 Jan 2026,101.88,paid
+10602,Diego Kim,,25,  Australia ,2025-07-18,370.05,paid
+10910,  Grace Silva ,grace.silva910@example.com,44,  Vietnam ,04-24-2026,140.14,paid
+10683,  Diego Smith ,diego.smith683@example.com,73,  India ,31/08/2025,41.4,refunded
+10263,  Aisha Garcia ,aisha.garcia263@example.com,77,australia,28/05/2025,284.16,refunded
+10376,  Ivy Okafor ,not-an-email,76,  Australia ,2025-10-10,210.15,paid
+10473,HIRO SILVA,hiro.silva473@example.com,46,INDIA,2025-01-07,259.7,pending
+10700,BEN SMITH,ben.smith700@example.com,36,Australia,05/02/2026,141.59,refunded
+10818,  Diego Garcia ,diego.garcia818@example.com,21,Vietnam,2025-10-29,317.05,refunded
+10349,farid khan,farid.khan349@example.com,42,VIETNAM,2026-05-30,,paid
+10073,  Hiro Brown ,hiro.brown73@example.com,59,  Canada ,04 Sep 2025,397.5,paid
+10100,  Grace Rossi ,grace.rossi100@example.com,79,AUSTRALIA,06-05-2025,435.5,pending
+10673,  Farid Brown ,not-an-email,33,Nigeria,18/06/2025,54.48,refunded
+10720,  Hiro Smith ,hiro.smith720@example.com,29,BRAZIL,2025-10-22,64.08,pending
+10278,  Hiro Kim ,hiro.kim278@example.com,61,BRAZIL,03-12-2025,124.8,refunded
+10259,Farid Kim,,41,  Brazil ,11/02/2026,495.17,paid
+10043,farid kim,farid.kim43@example.com,40,  Canada ,03-13-2025,469.92,paid
+10875,Elena Okafor,elena.okafor875@example.com,70,nigeria,16/07/2025,120.96,pending
+10224,elena garcia,elena.garcia224@example.com,28,  Canada ,04-26-2025,360.71,paid
+10801,Hiro Silva,hiro.silva801@example.com,39,  Australia ,10-03-2025,473.97,refunded
+10158,grace patel,,53,brazil,28/03/2025,336.71,refunded
+10178,farid kim,farid.kim178@example.com,45,  Brazil ,08 May 2025,172.82,paid
+10790,Hiro Okafor,hiro.okafor790@example.com,34,  Nigeria ,02-16-2025,488.87,refunded
+10680,diego rossi,diego.rossi680@example.com,57,Brazil,2025-09-15,371.51,refunded
+10365,HIRO NGUYEN,hiro.nguyen365@example.com,56,BRAZIL,2026-03-18,55.12,paid
+10285,Hiro Silva,hiro.silva285@example.com,37,Australia,2025-11-23,425.34,refunded
+10755,Aisha Brown,aisha.brown755@example.com,47,  Canada ,30 Nov 2025,136.98,refunded
+10886,  Ben Patel ,ben.patel886@example.com,21,  Vietnam ,2025-03-05,55.4,paid
+10830,Ben Brown,ben.brown830@example.com,28,Canada,12/02/2025,,paid
+10117,aisha khan,aisha.khan117@example.com,76,NIGERIA,2026-07-29,319.52,pending
+10049,  Elena Kim ,elena.kim49@example.com,68,nigeria,04 Aug 2025,223.68,refunded
+10065,  Ben Khan ,ben.khan65@example.com,62,,12/08/2025,304.92,refunded
+10279,Chen Rossi,chen.rossi279@example.com,46,  Nigeria ,22 Jan 2026,269.51,refunded
+10014,Ivy Kim,ivy.kim14@example.com,36,BRAZIL,15 Dec 2025,6.61,refunded
+10082,elena khan,elena.khan82@example.com,54,Nigeria,2026-03-16,474.06,paid
+10949,FARID OKAFOR,farid.okafor949@example.com,52,AUSTRALIA,06/09/2025,-49.99,pending
+10955,ELENA KHAN,elena.khan955@example.com,53,CANADA,07-05-2026,193.32,pending
+10401,Grace Silva,grace.silva401@example.com,20,NIGERIA,01-28-2026,475.28,pending
+10749,Hiro Silva,hiro.silva749@example.com,29,nigeria,06/02/2025,,paid
+10603,Jon Rossi,jon.rossi603@example.com,39,VIETNAM,2026-02-28,322.11,refunded
+10988,HIRO ROSSI,hiro.rossi988@example.com,19,  Nigeria ,11-03-2025,214.11,pending
+10391,farid kim,farid.kim391@example.com,30,INDIA,2025-09-25,403.69,refunded
+10927,HIRO SMITH,hiro.smith927@example.com,51,  Vietnam ,13 Feb 2026,234.03,paid
+10273,  Farid Kim ,farid.kim273@example.com,56,NIGERIA,10 Sep 2025,57.95,pending
+10784,Chen Khan,chen.khan784@example.com,63,  Nigeria ,01 May 2025,,pending
+10557,BEN OKAFOR,ben.okafor557@example.com,49,Canada,05-10-2026,,refunded
+10981,  Ben Okafor ,ben.okafor981@example.com,59,  Canada ,22/01/2026,115.66,paid
+10596,jon khan,jon.khan596@example.com,76,Australia,2025-11-02,211.39,paid
+10396,grace okafor,grace.okafor396@example.com,55,  Vietnam ,2026-01-16,,refunded
+10250,farid kim,farid.kim250@example.com,50,  Brazil ,2025-09-25,402.39,refunded
+10947,DIEGO PATEL,diego.patel947@example.com,59,,20 Jan 2026,370.93,pending
+10175,  Ivy Okafor ,ivy.okafor175@example.com,80,  Canada ,29/06/2025,,paid
+10671,Farid Rossi,farid.rossi671@example.com,80,CANADA,11-29-2025,,paid
+10637,  Chen Rossi ,,72,CANADA,01-08-2025,208.36,refunded
+10555,FARID NGUYEN,farid.nguyen555@example.com,24,  Australia ,10-10-2025,82.27,pending
+10173,Ben Brown,ben.brown173@example.com,42,Brazil,12 Jul 2026,490.61,pending
+10854,  Ben Khan ,ben.khan854@example.com,32,brazil,2026-02-24,479.25,pending
+10394,FARID BROWN,farid.brown394@example.com,71,CANADA,11-04-2025,53.31,paid
+10718,JON PATEL,jon.patel718@example.com,71,,24 Jul 2025,25.91,pending
+10936,  Aisha Kim ,aisha.kim936@example.com,40,INDIA,2025-06-07,446.88,refunded
+10382,grace silva,,70,AUSTRALIA,2026-06-13,,refunded
+10828,Elena Okafor,elena.okafor828@example.com,67,nigeria,30/12/2025,427.44,refunded
+10226,GRACE SMITH,grace.smith226@example.com,48,VIETNAM,2025-07-09,134.09,paid
+10280,grace brown,grace.brown280@example.com,62,Nigeria,2025-02-07,385.63,refunded
+10135,ben okafor,ben.okafor135@example.com,25,VIETNAM,24 Jul 2026,423.35,refunded
+10573,chen nguyen,chen.nguyen573@example.com,40,canada,22/12/2025,498.02,refunded
+10233,  Jon Silva ,jon.silva233@example.com,69,  Australia ,04/04/2025,259.06,pending
+10899,DIEGO KIM,diego.kim899@example.com,74,VIETNAM,06-28-2025,424.53,paid
+10232,DIEGO KHAN,diego.khan232@example.com,28,  Vietnam ,2026-07-04,341.75,refunded
+10874,aisha smith,aisha.smith874@example.com,77,  India ,2026-04-19,114.65,paid
+10496,ben brown,ben.brown496@example.com,39,australia,03-16-2025,0,pending
+10885,Hiro Khan,hiro.khan885@example.com,80,Australia,08 May 2025,160.07,refunded
+10446,Jon Brown,jon.brown446@example.com,25,canada,02 May 2026,123.97,refunded
+10783,  Elena Patel ,elena.patel783@example.com,57,brazil,20/02/2025,49.09,pending
+10964,FARID PATEL,farid.patel964@example.com,77,  Canada ,10-03-2025,8.18,paid
+10987,AISHA OKAFOR,aisha.okafor987@example.com,72,CANADA,2025-06-06,461.96,paid
+10440,DIEGO KHAN,diego.khan440@example.com,76,,30/03/2026,389.19,paid
+10248,  Jon Brown ,jon.brown248@example.com,31,vietnam,2025-08-11,109.84,paid
+10247,HIRO OKAFOR,hiro.okafor247@example.com,21,  Vietnam ,2025-04-05,437.44,paid
+10293,IVY PATEL,ivy.patel293@example.com,49,VIETNAM,23/07/2026,160.72,pending
+10993,  Aisha Smith ,aisha.smith993@example.com,29,Australia,12-31-2025,298.73,paid
+10166,ELENA SILVA,elena.silva166@example.com,71,,10/06/2026,,pending
+10642,Elena Khan,elena.khan642@example.com,58,BRAZIL,2025-09-24,329.88,pending
+10083,DIEGO KIM,diego.kim83@example.com,33,India,25/03/2025,6.32,pending
+10122,Ben Garcia,ben.garcia122@example.com,68,VIETNAM,22/01/2025,394.55,paid
+10474,DIEGO PATEL,diego.patel474@example.com,41,Nigeria,11/07/2025,210.23,pending
+10890,BEN KHAN,ben.khan890@example.com,58,nigeria,07-18-2025,213.4,refunded
+10530,Elena Patel,elena.patel530@example.com,32,AUSTRALIA,2026-03-25,249.32,pending
+10728,  Ben Patel ,ben.patel728@example.com,40,vietnam,18/01/2025,409.43,refunded
+10074,ELENA GARCIA,elena.garcia74@example.com,37,canada,19 Feb 2026,278.97,pending
+10612,  Chen Garcia ,chen.garcia612@example.com,64,nigeria,12-15-2025,75.93,paid
+10094,BEN NGUYEN,ben.nguyen94@example.com,37,Nigeria,03 Sep 2025,51.14,paid
+10102,Farid Khan,farid.khan102@example.com,72,  Vietnam ,02-12-2026,,pending
+10407,Ivy Khan,ivy.khan407@example.com,60,Australia,2025-02-19,346.43,pending
+10866,Ivy Silva,ivy.silva866@example.com,70,brazil,12/02/2025,5.27,pending
+10324,aisha patel,aisha.patel324@example.com,51,nigeria,24/05/2026,189.08,refunded
+10198,  Aisha Patel ,aisha.patel198@example.com,48,BRAZIL,03-27-2026,305.3,pending
+10609,JON KHAN,jon.khan609@example.com,56,australia,02-03-2026,356.37,pending
+10464,Elena Silva,elena.silva464@example.com,29,Canada,07-19-2026,430.06,paid
+10562,  Jon Nguyen ,jon.nguyen562@example.com,34,  Australia ,16 Jul 2026,388.04,paid
+10018,CHEN PATEL,chen.patel18@example.com,34,  Nigeria ,02/05/2026,464.81,refunded
+10894,DIEGO SMITH,diego.smith894@example.com,60,  Brazil ,12-16-2025,426.74,refunded
+10479,  Elena Patel ,elena.patel479@example.com,56,Nigeria,17/12/2025,192.21,paid
+10378,  Grace Kim ,grace.kim378@example.com,54,  Nigeria ,2026-01-28,90.24,pending
+10297,Hiro Brown,hiro.brown297@example.com,54,australia,06-08-2026,273.31,paid
+10716,Grace Rossi,grace.rossi716@example.com,27,india,23 May 2025,494.25,refunded
+10879,  Ivy Khan ,ivy.khan879@example.com,18,Brazil,09-16-2025,219.11,pending
+10192,ben brown,ben.brown192@example.com,28,india,06/06/2025,176.28,refunded
+10217,ben okafor,ben.okafor217@example.com,65,BRAZIL,29/03/2026,414.84,pending
+10996,BEN SMITH,ben.smith996@example.com,19,  Nigeria ,05-16-2026,348.39,paid
+10540,grace okafor,grace.okafor540@example.com,75,  Australia ,18 May 2025,281.72,refunded
+10896,HIRO GARCIA,hiro.garcia896@example.com,62,  India ,04/01/2025,123.31,refunded
+10611,BEN OKAFOR,,76,  Australia ,2025-02-08,400.52,refunded
+10137,  Aisha Patel ,aisha.patel137@example.com,22,India,2025-05-27,374.33,paid
+10453,Grace Smith,grace.smith453@example.com,59,Canada,2026-07-02,351.94,paid
+10296,diego kim,diego.kim296@example.com,0,nigeria,03/02/2025,391.47,refunded
+10265,AISHA SMITH,aisha.smith265@example.com,71,australia,24 Mar 2026,484.62,pending
+10812,  Elena Okafor ,elena.okafor812@example.com,57,vietnam,11/04/2026,109.48,paid
+10303,  Farid Garcia ,farid.garcia303@example.com,27,nigeria,07 Feb 2026,190.71,paid
+10343,ben khan,ben.khan343@example.com,76,Australia,2026-08-24,102.89,refunded
+10237,Hiro Rossi,hiro.rossi237@example.com,61,CANADA,01-20-2026,63.72,refunded
+10758,Grace Garcia,grace.garcia758@example.com,71,NIGERIA,05-24-2026,136.25,pending
+10607,aisha brown,aisha.brown607@example.com,53,,03/11/2025,290.81,pending
+10169,  Hiro Patel ,hiro.patel169@example.com,57,Australia,2026-04-26,131.68,paid
+10696,Farid Patel,farid.patel696@example.com,53,CANADA,27/07/2026,490.72,paid
+10338,BEN PATEL,,46,brazil,19 Apr 2025,64.76,pending
+10570,aisha smith,aisha.smith570@example.com,60,canada,2026-02-02,14.44,refunded
+10756,hiro khan,hiro.khan756@example.com,42,  Nigeria ,01-23-2025,288.41,pending
+10642,Elena Khan,elena.khan642@example.com,58,BRAZIL,2025-09-24,329.88,pending
+10539,  Ivy Smith ,ivy.smith539@example.com,32,,09 May 2025,367.93,paid
+10638,Jon Okafor,jon.okafor638@example.com,54,brazil,2025-02-04,292.23,refunded
+10108,jon kim,jon.kim108@example.com,47,VIETNAM,11 Mar 2026,427.4,paid
+10913,IVY GARCIA,ivy.garcia913@example.com,61,vietnam,12-08-2025,,refunded
+10563,CHEN SILVA,chen.silva563@example.com,49,BRAZIL,27/07/2026,124.95,pending
+10098,ivy silva,ivy.silva98@example.com,53,  Nigeria ,20 Dec 2025,466.76,paid
+10085,  Elena Khan ,elena.khan85@example.com,25,NIGERIA,22/07/2025,454.66,paid
+10699,ben silva,ben.silva699@example.com,46,nigeria,2026-06-29,98.24,pending
+10147,FARID GARCIA,farid.garcia147@example.com,22,Nigeria,08/12/2025,453.43,pending
+10133,aisha khan,aisha.khan133@example.com,60,  Australia ,07-30-2026,437.44,pending
+10225,FARID KIM,,29,  Nigeria ,05 Aug 2026,260.06,paid
+10129,jon khan,jon.khan129@example.com,42,nigeria,16 Jul 2026,255.25,pending
+10201,diego patel,diego.patel201@example.com,30,  India ,02 Dec 2025,251.89,pending
+10034,Elena Khan,elena.khan34@example.com,60,nigeria,2026-06-26,469.77,paid
+10618,IVY SILVA,ivy.silva618@example.com,19,Brazil,2025-02-21,194.88,paid
+10099,DIEGO KHAN,diego.khan99@example.com,72,Brazil,01-28-2026,373.63,refunded
+10375,diego patel,diego.patel375@example.com,76,Canada,2025-09-22,197.11,pending
+10698,Ivy Rossi,ivy.rossi698@example.com,22,vietnam,11 Oct 2025,245.68,refunded
+10730,CHEN GARCIA,chen.garcia730@example.com,31,,11 Nov 2025,346.95,paid
+10264,  Grace Brown ,grace.brown264@example.com,66,CANADA,2025-12-06,252.89,pending
+10481,Jon Nguyen,jon.nguyen481@example.com,23,BRAZIL,2026-06-29,449.0,refunded
+10549,IVY SMITH,ivy.smith549@example.com,52,BRAZIL,14/04/2025,265.47,paid
+10319,Aisha Khan,aisha.khan319@example.com,34,India,2025-03-11,474.6,pending
+10520,Ivy Patel,ivy.patel520@example.com,60,vietnam,30 Jan 2025,236.26,refunded
+10816,CHEN GARCIA,chen.garcia816@example.com,23,  Vietnam ,23/03/2026,239.62,paid
+10653,Elena Kim,elena.kim653@example.com,19,Nigeria,2025-07-17,469.56,refunded
+10624,  Ben Kim ,ben.kim624@example.com,43,  Nigeria ,30/06/2026,312.33,refunded
+10476,CHEN KHAN,chen.khan476@example.com,58,Nigeria,14/06/2025,32.68,pending
+10488,Farid Rossi,farid.rossi488@example.com,65,  India ,22/05/2025,54.64,refunded
+10735,AISHA BROWN,aisha.brown735@example.com,79,VIETNAM,2025-08-11,486.92,paid
+10879,  Ivy Khan ,ivy.khan879@example.com,18,Brazil,09-16-2025,219.11,pending
+10803,Ben Brown,ben.brown803@example.com,43,VIETNAM,26/01/2026,482.7,pending
+10737,  Chen Okafor ,chen.okafor737@example.com,31,NIGERIA,24 Jan 2026,60.86,pending
+10770,jon smith,jon.smith770@example.com,71,  Nigeria ,17/11/2025,468.07,paid
+10358,GRACE KIM,grace.kim358@example.com,29,Canada,29 Oct 2025,426.12,refunded
+10016,ivy brown,ivy.brown16@example.com,49,Australia,01-01-2025,439.97,pending
+10842,Elena Brown,,21,Canada,29 Dec 2025,152.49,refunded
+10893,Ivy Khan,,33,Nigeria,29 May 2025,175.19,paid
+10174,aisha okafor,missing-at.com,33,Canada,03-11-2025,9999999,pending
+10538,chen silva,chen.silva538@example.com,77,Canada,2025-04-04,9999999,paid
+10387,Diego Kim,diego.kim387@example.com,73,Canada,24 Feb 2026,456.2,refunded
+10840,chen brown,chen.brown840@example.com,31,australia,07-08-2026,379.74,paid
+10418,BEN PATEL,ben.patel418@example.com,24,  Brazil ,02 Mar 2025,94.72,pending
+10148,Farid Patel,farid.patel148@example.com,27,VIETNAM,30/08/2025,303.19,refunded
+10036,elena brown,elena.brown36@example.com,75,Australia,16 May 2026,415.53,paid
+10584,  Grace Rossi ,grace.rossi584@example.com,64,  Vietnam ,2025-02-12,262.72,pending
+10559,Jon Nguyen,jon.nguyen559@example.com,37,Nigeria,01-27-2026,272.27,paid
+10340,jon nguyen,jon.nguyen340@example.com,27,AUSTRALIA,08-09-2025,201.14,paid
+10845,Grace Rossi,grace.rossi845@example.com,21,BRAZIL,25 Mar 2025,,paid
+10030,DIEGO ROSSI,diego.rossi30@example.com,55,,2025-05-03,212.52,refunded
+10777,hiro silva,john@@example,63,Brazil,27/02/2026,350.75,refunded
+10751,ivy nguyen,ivy.nguyen751@example.com,49,  Nigeria ,02-05-2026,384.4,pending
+10753,  Farid Rossi ,farid.rossi753@example.com,40,  Vietnam ,04-10-2025,32.94,paid
+10887,  Ivy Nguyen ,ivy.nguyen887@example.com,43,  Australia ,29/10/2025,-49.99,refunded
+10903,FARID OKAFOR,,76,AUSTRALIA,03-16-2026,395.85,pending
+10209,  Farid Okafor ,farid.okafor209@example.com,55,,23 Apr 2025,136.44,refunded
+10510,CHEN SILVA,chen.silva510@example.com,44,BRAZIL,01-10-2025,393.74,pending
+10031,jon brown,jon.brown31@example.com,31,canada,20/11/2025,136.48,paid
+10631,  Ben Khan ,ben.khan631@example.com,72,india,2025-01-09,187.77,refunded
+10113,GRACE PATEL,grace.patel113@example.com,68,nigeria,07-25-2025,416.08,pending
+10374,CHEN PATEL,chen.patel374@example.com,26,  Australia ,2025-08-05,494.2,pending
+10795,IVY SILVA,ivy.silva795@example.com,27,AUSTRALIA,24/02/2025,22.75,pending
+10719,  Jon Kim ,jon.kim719@example.com,32,Australia,21/05/2026,135.03,refunded
+10953,  Hiro Garcia ,hiro.garcia953@example.com,23,  Vietnam ,06 Oct 2025,88.04,pending
+10179,hiro silva,hiro.silva179@example.com,69,  Australia ,2026-01-12,218.15,paid
+10177,grace brown,grace.brown177@example.com,20,CANADA,04-30-2026,181.7,paid
+10430,  Jon Smith ,jon.smith430@example.com,60,NIGERIA,07 Apr 2026,7.15,refunded
+10925,BEN ROSSI,ben.rossi925@example.com,73,india,31 Jul 2025,409.86,refunded
+10425,Aisha Brown,,70,australia,17/07/2026,329.03,pending
+10381,chen kim,chen.kim381@example.com,35,  Canada ,2026-03-30,98.03,paid
+10836,Grace Nguyen,grace.nguyen836@example.com,60,CANADA,2026-02-07,488.98,refunded
+10567,Elena Nguyen,elena.nguyen567@example.com,37,  Brazil ,2025-12-18,169.28,refunded
+10063,Hiro Nguyen,hiro.nguyen63@example.com,78,VIETNAM,2026-07-07,391.71,refunded
+10040,JON PATEL,jon.patel40@example.com,80,  India ,2025-08-31,93.78,pending
+10841,aisha nguyen,aisha.nguyen841@example.com,33,  Vietnam ,2026-07-07,367.33,pending
+10898,ivy smith,ivy.smith898@example.com,46,india,2025-05-26,487.78,paid
+10160,HIRO GARCIA,hiro.garcia160@example.com,27,australia,2025-08-20,256.31,refunded
+10532,Aisha Kim,aisha.kim532@example.com,52,BRAZIL,06/02/2026,448.37,pending
+10132,Hiro Smith,hiro.smith132@example.com,23,Brazil,04-04-2025,406.83,refunded
+10010,  Jon Okafor ,,43,  Canada ,06/08/2025,136.12,paid
+10058,Grace Rossi,grace.rossi58@example.com,72,  Nigeria ,22 Aug 2026,7.92,pending
+10182,BEN ROSSI,ben.rossi182@example.com,78,AUSTRALIA,08 Jan 2026,22.23,paid
+10991,  Jon Patel ,jon.patel991@example.com,36,INDIA,29/03/2026,403.16,paid
+10145,  Grace Kim ,grace.kim145@example.com,19,VIETNAM,28 Apr 2025,416.85,pending
+10047,ben kim,ben.kim47@example.com,60,brazil,04 Jun 2026,350.12,refunded
+10933,Diego Rossi,diego.rossi933@example.com,34,AUSTRALIA,02-08-2025,336.8,pending
+10989,Farid Rossi,farid.rossi989@example.com,51,canada,02-05-2026,,paid
+10613,Ivy Patel,ivy.patel613@example.com,47,Brazil,2025-07-30,158.94,paid
+10483,Grace Okafor,grace.okafor483@example.com,45,india,13 Aug 2026,384.1,paid
+10940,BEN OKAFOR,ben.okafor940@example.com,57,  India ,27 Nov 2025,64.8,paid
+10087,  Elena Rossi ,elena.rossi87@example.com,46,Australia,06 Oct 2025,368.59,refunded
+10911,chen silva,chen.silva911@example.com,59,australia,2025-08-28,150.79,refunded
+10939,Aisha Okafor,aisha.okafor939@example.com,32,AUSTRALIA,16/07/2025,26.79,refunded
+10445,GRACE SMITH,grace.smith445@example.com,74,india,12-24-2025,183.59,paid
+10067,Diego Smith,diego.smith67@example.com,62,Vietnam,2025-09-06,9999999,pending
+10318,  Chen Rossi ,,41,NIGERIA,06 Aug 2026,,paid
+10796,Chen Silva,chen.silva796@example.com,75,Brazil,23 Mar 2026,181.48,refunded
+10656,GRACE OKAFOR,grace.okafor656@example.com,67,australia,2025-09-21,194.49,pending
+10103,IVY NGUYEN,ivy.nguyen103@example.com,58,canada,12/03/2025,374.65,pending
+10410,ivy khan,john@@example,25,  Australia ,01/05/2025,306.46,pending
+10431,  Aisha Brown ,aisha.brown431@example.com,77,NIGERIA,20/03/2026,366.59,paid
+10640,ben brown,ben.brown640@example.com,57,australia,2026-08-17,237.09,refunded
+10008,ELENA SMITH,elena.smith8@example.com,28,  Brazil ,06-25-2025,494.81,refunded
+10752,Farid Nguyen,farid.nguyen752@example.com,26,vietnam,2025-01-29,383.77,refunded
+10880,  Elena Smith ,,49,Vietnam,15/06/2026,28.25,pending
+10982,Elena Smith,elena.smith982@example.com,39,CANADA,2025-04-25,,paid
+10521,ELENA BROWN,elena.brown521@example.com,80,CANADA,01 Apr 2026,317.37,refunded
+10767,AISHA KIM,aisha.kim767@example.com,59,  Australia ,2025-10-12,32.39,paid
+10490,Jon Rossi,jon.rossi490@example.com,34,india,2025-04-01,306.47,refunded
+10369,  Ben Kim ,ben.kim369@example.com,49,canada,2026-02-12,322.72,pending
+10760,IVY SILVA,ivy.silva760@example.com,40,australia,03-14-2026,219.29,refunded
+10093,hiro nguyen,hiro.nguyen93@example.com,53,india,28 Jul 2025,441.02,pending
+10937,Diego Silva,diego.silva937@example.com,42,canada,18 Feb 2025,30.95,paid
+10726,chen nguyen,chen.nguyen726@example.com,41,  Brazil ,05-21-2025,460.85,paid
+10094,BEN NGUYEN,ben.nguyen94@example.com,37,Nigeria,03 Sep 2025,51.14,paid
+10325,elena smith,elena.smith325@example.com,69,brazil,2025-01-31,135.16,refunded
+10367,JON BROWN,jon.brown367@example.com,21,Vietnam,18 May 2026,48.38,refunded
+10620,IVY SMITH,ivy.smith620@example.com,23,  Canada ,2026-04-22,230.51,refunded
+10501,DIEGO SILVA,diego.silva501@example.com,65,india,24/07/2025,118.46,paid
+10124,AISHA KIM,aisha.kim124@example.com,52,VIETNAM,2025-05-29,332.22,paid
+10215,elena garcia,elena.garcia215@example.com,48,vietnam,05-16-2026,65.33,refunded
+10167,  Aisha Rossi ,aisha.rossi167@example.com,50,VIETNAM,24 Feb 2025,497.29,pending
+10761,  Farid Garcia ,farid.garcia761@example.com,34,  Nigeria ,01/03/2026,441.04,refunded
+10920,  Jon Khan ,jon.khan920@example.com,80,BRAZIL,11 Aug 2026,,pending
+10593,  Aisha Silva ,aisha.silva593@example.com,52,  Australia ,25/05/2026,112.35,refunded
+10519,BEN ROSSI,,33,canada,13 Nov 2025,315.11,paid
+10180,Ivy Kim,ivy.kim180@example.com,23,vietnam,11-25-2025,0,refunded
+10096,HIRO GARCIA,,42,INDIA,2026-04-13,141.74,pending
+10128,  Grace Smith ,not-an-email,22,,18/05/2026,37.51,pending
+10605,Farid Rossi,,71,INDIA,08-06-2026,417.74,refunded
+10681,  Chen Patel ,chen.patel681@example.com,50,Australia,30/01/2025,362.09,refunded
+10211,Diego Nguyen,diego.nguyen211@example.com,30,  Australia ,08-10-2026,212.3,pending
+10771,CHEN SMITH,chen.smith771@example.com,80,  Vietnam ,29 Jun 2025,130.88,refunded
+10409,Aisha Kim,aisha.kim409@example.com,60,nigeria,07/03/2026,212.32,paid
+10450,DIEGO ROSSI,diego.rossi450@example.com,52,  Canada ,2025-04-17,374.71,paid
+10458,IVY PATEL,ivy.patel458@example.com,32,nigeria,14/06/2025,61.74,refunded
+10051,ELENA GARCIA,,19,AUSTRALIA,23 Jul 2025,307.58,paid
+10390,farid brown,farid.brown390@example.com,61,  Australia ,2025-10-17,171.46,pending
+10714,grace okafor,grace.okafor714@example.com,18,vietnam,01-31-2026,157.5,pending
+10455,  Grace Rossi ,grace.rossi455@example.com,28,NIGERIA,01/02/2025,,refunded
+10675,  Jon Kim ,jon.kim675@example.com,62,INDIA,03/03/2026,321.71,refunded
+10829,  Jon Smith ,jon.smith829@example.com,69,Brazil,2025-02-21,391.92,refunded
+10127,jon nguyen,jon.nguyen127@example.com,47,,2026-06-18,499.3,pending
+10852,  Ben Nguyen ,,54,,03-04-2026,391.77,pending
+10141,jon silva,jon.silva141@example.com,20,  India ,2026-06-24,8.81,pending
+10028,IVY SILVA,ivy.silva28@example.com,36,India,2025-06-08,375.25,paid
+10684,HIRO NGUYEN,hiro.nguyen684@example.com,31,  Nigeria ,23/03/2026,196.73,paid
+10223,elena khan,elena.khan223@example.com,36,  Brazil ,20/04/2025,426.27,pending
+10667,AISHA ROSSI,aisha.rossi667@example.com,69,  Canada ,02/05/2025,371.82,paid
+10409,Aisha Kim,aisha.kim409@example.com,60,nigeria,07/03/2026,212.32,paid
+10435,  Farid Smith ,farid.smith435@example.com,55,,12-27-2025,439.35,pending
+10971,grace khan,grace.khan971@example.com,77,  Brazil ,06-17-2026,304.16,pending
+10959,diego rossi,diego.rossi959@example.com,50,  Canada ,09-19-2025,349.75,refunded
+10207,  Aisha Patel ,aisha.patel207@example.com,51,BRAZIL,08/12/2025,167.34,refunded
+10926,hiro patel,hiro.patel926@example.com,55,  India ,08-12-2026,,paid
+10236,  Hiro Nguyen ,hiro.nguyen236@example.com,29,  India ,10-21-2025,496.46,pending
+10897,  Farid Rossi ,farid.rossi897@example.com,29,australia,2025-07-30,41.5,paid
+10914,elena garcia,elena.garcia914@example.com,18,vietnam,05-22-2025,392.65,pending
+10071,jon khan,jon.khan71@example.com,19,brazil,24/01/2026,246.34,pending
+10357,GRACE SILVA,grace.silva357@example.com,63,nigeria,21/11/2025,334.44,paid
+10554,ELENA KHAN,elena.khan554@example.com,74,Vietnam,01-17-2025,492.28,paid
+10851,grace nguyen,grace.nguyen851@example.com,31,  India ,2025-11-09,65.55,pending
+10041,GRACE GARCIA,john@@example,68,Canada,01 Oct 2025,436.72,pending
+10617,farid kim,farid.kim617@example.com,54,INDIA,2025-05-25,159.13,pending
+10547,  Ben Nguyen ,ben.nguyen547@example.com,77,,2025-08-02,183.66,refunded
+10027,  Chen Rossi ,chen.rossi27@example.com,0,brazil,03 Jan 2025,349.81,refunded
+10827,  Aisha Smith ,,25,NIGERIA,2025-12-12,283.18,pending
+10186,  Hiro Garcia ,hiro.garcia186@example.com,30,AUSTRALIA,2025-10-20,228.76,refunded
+10895,  Farid Khan ,farid.khan895@example.com,39,India,03 Nov 2025,438.67,paid
+10212,  Diego Rossi ,diego.rossi212@example.com,73,Canada,29/05/2026,261.75,refunded
+10152,  Ben Khan ,ben.khan152@example.com,47,Nigeria,04 Jun 2026,454.98,refunded
+10194,IVY SMITH,ivy.smith194@example.com,55,NIGERIA,30/05/2026,331.07,refunded
+10157,Jon Patel,jon.patel157@example.com,55,CANADA,12-08-2025,158.56,refunded
+10591,CHEN OKAFOR,chen.okafor591@example.com,28,INDIA,2026-08-03,212.69,pending
+10364,  Ben Okafor ,ben.okafor364@example.com,28,Canada,2025-06-24,172.29,refunded
+10706,jon patel,jon.patel706@example.com,29,INDIA,03/07/2026,122.76,paid
+10206,farid okafor,farid.okafor206@example.com,66,INDIA,26 Jul 2026,252.54,paid
+10682,JON OKAFOR,,65,canada,06/03/2026,390.59,pending
+10918,elena nguyen,elena.nguyen918@example.com,39,  India ,27 May 2026,344.45,pending
+10469,  Farid Nguyen ,farid.nguyen469@example.com,32,australia,08-13-2025,120.84,refunded
+10546,  Diego Smith ,diego.smith546@example.com,60,,2025-02-02,186.35,refunded
+10747,hiro silva,hiro.silva747@example.com,60,  Brazil ,07-26-2025,273.51,refunded
+10691,IVY NGUYEN,ivy.nguyen691@example.com,26,vietnam,21/02/2026,325.58,paid
+10599,  Elena Okafor ,elena.okafor599@example.com,51,INDIA,2026-06-24,59.1,refunded
+10458,IVY PATEL,ivy.patel458@example.com,32,nigeria,14/06/2025,61.74,refunded
+10815,CHEN PATEL,chen.patel815@example.com,25,AUSTRALIA,2025-01-15,108.57,refunded
+10916,  Diego Silva ,diego.silva916@example.com,64,brazil,2025-08-28,159.97,paid
+10760,IVY SILVA,ivy.silva760@example.com,40,australia,03-14-2026,219.29,refunded
+10331,aisha okafor,aisha.okafor331@example.com,54,VIETNAM,25 Jul 2025,187.3,pending
+10231,ben brown,ben.brown231@example.com,22,Nigeria,2026-04-03,415.24,refunded
+10009,Ivy Garcia,ivy.garcia9@example.com,32,,29 Nov 2025,137.53,paid
+10818,  Diego Garcia ,diego.garcia818@example.com,21,Vietnam,2025-10-29,317.05,refunded
+10837,  Ivy Kim ,ivy.kim837@example.com,74,canada,03-06-2026,455.07,paid
+10639,ben patel,ben.patel639@example.com,47,Nigeria,2026-06-24,126.39,refunded
+10977,Chen Brown,chen.brown977@example.com,26,Brazil,08-09-2026,417.02,refunded
+10301,FARID BROWN,farid.brown301@example.com,38,canada,10-15-2025,288.5,refunded
+10743,  Ben Garcia ,not-an-email,35,canada,11 Mar 2026,181.27,refunded
+10412,Hiro Okafor,hiro.okafor412@example.com,18,Canada,2025-08-29,418.44,refunded
+10022,  Ivy Patel ,ivy.patel22@example.com,33,  Brazil ,08/08/2026,51.69,refunded
+10967,BEN SILVA,ben.silva967@example.com,29,India,04/08/2026,405.54,paid
+10541,HIRO GARCIA,hiro.garcia541@example.com,52,vietnam,04 Aug 2026,,refunded
+10465,Ivy Garcia,ivy.garcia465@example.com,64,Australia,2025-09-27,407.26,refunded
+10348,  Diego Brown ,missing-at.com,68,canada,20 Jan 2025,274.54,pending
+10590,  Hiro Okafor ,hiro.okafor590@example.com,64,NIGERIA,29 Mar 2025,277.42,paid
+10664,  Grace Garcia ,grace.garcia664@example.com,75,australia,03 Nov 2025,9999999,refunded
+10979,Ben Smith,ben.smith979@example.com,28,  Vietnam ,03-22-2026,114.09,pending
+10725,ivy okafor,ivy.okafor725@example.com,35,canada,2025-11-20,269.54,pending
+10339,  Diego Silva ,diego.silva339@example.com,34,Australia,12/11/2025,404.76,pending
+10667,AISHA ROSSI,aisha.rossi667@example.com,69,  Canada ,02/05/2025,371.82,paid
+10809,  Elena Garcia ,elena.garcia809@example.com,36,Nigeria,2026-06-20,459.06,refunded
+10463,diego rossi,diego.rossi463@example.com,26,canada,11 Oct 2025,234.11,pending
+10477,Chen Brown,,74,canada,2026-02-20,112.21,refunded
+10284,ben patel,ben.patel284@example.com,39,BRAZIL,23 Dec 2025,177.41,paid
+10442,IVY KIM,ivy.kim442@example.com,55,Vietnam,05-14-2025,,paid
+10701,CHEN SILVA,chen.silva701@example.com,51,Canada,06-04-2025,211.19,refunded
+10075,grace brown,,62,brazil,12-05-2025,129.44,paid
+10196,  Elena Garcia ,elena.garcia196@example.com,57,Canada,09 Aug 2026,445.05,refunded
+10666,  Elena Silva ,not-an-email,79,Australia,07-01-2026,32.75,refunded
+10924,  Aisha Patel ,aisha.patel924@example.com,43,India,01/12/2025,270.54,pending
+10776,  Elena Garcia ,elena.garcia776@example.com,58,  Vietnam ,2025-06-14,140.65,paid
+10928,ben kim,ben.kim928@example.com,62,canada,13 Apr 2026,,paid
+10090,farid rossi,farid.rossi90@example.com,60,AUSTRALIA,12-08-2025,208.76,pending
+10526,  Grace Garcia ,grace.garcia526@example.com,71,BRAZIL,06-17-2025,44.21,refunded
+10163,HIRO GARCIA,hiro.garcia163@example.com,150,BRAZIL,07-01-2026,340.76,refunded
+10992,Aisha Okafor,aisha.okafor992@example.com,61,  India ,13 Aug 2026,341.33,paid
+10116,  Farid Kim ,farid.kim116@example.com,70,canada,2026-08-22,339.04,pending
+10860,elena smith,elena.smith860@example.com,78,BRAZIL,2025-06-07,309.17,pending
+10095,  Hiro Smith ,hiro.smith95@example.com,77,canada,06-07-2025,210.67,pending
+10579,HIRO KIM,hiro.kim579@example.com,24,INDIA,2025-06-05,382.41,refunded
+10078,Ivy Patel,ivy.patel78@example.com,80,australia,08/10/2025,320.75,pending
+10069,HIRO PATEL,hiro.patel69@example.com,64,nigeria,22 Mar 2026,235.11,refunded
+10650,farid rossi,farid.rossi650@example.com,999,Vietnam,10-07-2025,328.9,pending
+10772,aisha silva,missing-at.com,62,australia,01 Jul 2026,240.05,paid
+10589,Jon Garcia,jon.garcia589@example.com,34,VIETNAM,2026-04-11,50.14,refunded
+10290,  Farid Khan ,farid.khan290@example.com,55,australia,02-02-2026,423.53,refunded
+10504,ELENA ROSSI,elena.rossi504@example.com,21,  Nigeria ,16 Aug 2025,470.13,paid
+10957,aisha nguyen,aisha.nguyen957@example.com,49,  Brazil ,28 May 2026,485.39,pending
+10335,Grace Okafor,grace.okafor335@example.com,55,AUSTRALIA,15 Apr 2026,42.04,refunded
+10517,aisha patel,aisha.patel517@example.com,78,Canada,29/08/2025,87.62,paid
+10033,Elena Patel,elena.patel33@example.com,74,india,12-24-2025,83.08,refunded
+10448,elena nguyen,elena.nguyen448@example.com,50,  Nigeria ,14 Jun 2026,26.71,refunded
+10580,JON KIM,jon.kim580@example.com,56,INDIA,2026-08-04,182.83,refunded
+10017,Diego Nguyen,diego.nguyen17@example.com,23,  Canada ,2025-09-04,489.1,refunded
+10867,  Elena Khan ,elena.khan867@example.com,40,CANADA,09-14-2025,27.51,refunded
+10525,Elena Khan,elena.khan525@example.com,53,VIETNAM,25 Aug 2025,441.67,pending
+10062,diego silva,diego.silva62@example.com,66,brazil,01 Dec 2025,129.87,paid
+10542,IVY PATEL,ivy.patel542@example.com,46,vietnam,03-12-2025,229.77,refunded
+10050,DIEGO BROWN,,60,australia,04-30-2026,51.23,paid
+10834,  Grace Garcia ,grace.garcia834@example.com,44,  Brazil ,05-22-2025,472.15,pending
+10929,  Grace Garcia ,grace.garcia929@example.com,47,BRAZIL,2025-07-03,199.81,paid
+10864,Diego Nguyen,diego.nguyen864@example.com,33,NIGERIA,10-03-2025,286.28,pending
+10421,  Diego Silva ,diego.silva421@example.com,27,Nigeria,2025-12-21,323.48,paid
+10658,  Hiro Smith ,hiro.smith658@example.com,31,Nigeria,28 May 2025,359.12,paid
+10123,BEN BROWN,ben.brown123@example.com,70,india,01/08/2025,395.38,refunded
+10788,  Hiro Smith ,not-an-email,26,  Vietnam ,11/01/2025,358.1,refunded
+10024,FARID SMITH,farid.smith24@example.com,30,  Nigeria ,12/09/2025,213.83,pending
+10619,  Grace Rossi ,grace.rossi619@example.com,57,vietnam,07-03-2025,409.63,refunded
+10262,Jon Silva,jon.silva262@example.com,77,australia,2025-10-05,93.78,pending
+10266,  Aisha Kim ,aisha.kim266@example.com,32,  Vietnam ,07 Apr 2026,96.94,refunded
+10721,  Hiro Smith ,hiro.smith721@example.com,54,brazil,06 Jan 2026,487.26,paid
+10694,farid brown,farid.brown694@example.com,45,VIETNAM,2025-02-03,312.13,pending
+10204,Farid Rossi,farid.rossi204@example.com,43,AUSTRALIA,01-10-2026,278.85,paid
+10902,Chen Brown,chen.brown902@example.com,150,INDIA,21/03/2026,99.88,pending
+10371,Diego Kim,diego.kim371@example.com,27,,2026-08-01,335.73,refunded
+10472,jon smith,jon.smith472@example.com,42,  India ,06-14-2026,,pending
+10234,  Jon Nguyen ,jon.nguyen234@example.com,61,Vietnam,27 Jul 2026,,paid
+10480,  Ben Nguyen ,ben.nguyen480@example.com,70,India,27/07/2025,240.56,refunded
+10329,elena smith,elena.smith329@example.com,25,,09/08/2026,115.48,refunded
+10189,farid brown,farid.brown189@example.com,47,NIGERIA,2026-08-10,37.55,pending
+10220,  Aisha Brown ,aisha.brown220@example.com,59,  Brazil ,11/06/2025,379.18,pending
+10766,  Hiro Silva ,hiro.silva766@example.com,45,Canada,28/07/2026,83.88,paid
+10457,Jon Rossi,jon.rossi457@example.com,37,india,05/07/2026,209.26,refunded
+10370,chen okafor,chen.okafor370@example.com,29,Brazil,01-26-2026,222.67,pending
+10322,  Jon Smith ,jon.smith322@example.com,64,India,14/11/2025,47.68,pending
+10858,Jon Okafor,jon.okafor858@example.com,49,australia,16 Feb 2026,94.35,paid
+10729,ivy okafor,ivy.okafor729@example.com,19,Canada,26/06/2025,68.71,refunded
+10717,Farid Smith,farid.smith717@example.com,18,brazil,20 Jan 2026,91.57,pending
+10070,JON KIM,jon.kim70@example.com,71,australia,27 Nov 2025,,pending
+10581,  Hiro Patel ,hiro.patel581@example.com,63,canada,30/05/2026,426.8,pending
+10023,  Grace Okafor ,grace.okafor23@example.com,47,Canada,2026-03-10,35.0,refunded
+10707,  Farid Khan ,farid.khan707@example.com,34,VIETNAM,10/05/2025,283.43,paid
+10299,Hiro Kim,hiro.kim299@example.com,0,AUSTRALIA,23/12/2025,406.3,refunded
+10943,HIRO SMITH,hiro.smith943@example.com,34,,04 Jul 2026,340.56,refunded
+10571,Grace Garcia,grace.garcia571@example.com,75,  Vietnam ,2026-01-25,97.28,refunded
+10267,GRACE SMITH,grace.smith267@example.com,63,Australia,10-30-2025,81.34,refunded
+10677,  Ben Kim ,ben.kim677@example.com,18,NIGERIA,23/12/2025,63.17,refunded
+10624,  Ben Kim ,ben.kim624@example.com,43,  Nigeria ,30/06/2026,312.33,refunded
+10560,FARID BROWN,farid.brown560@example.com,21,  Canada ,15 Aug 2025,377.66,refunded
+10587,JON NGUYEN,jon.nguyen587@example.com,47,  Canada ,2026-06-14,362.71,paid
+10336,AISHA ROSSI,aisha.rossi336@example.com,36,vietnam,14 May 2025,351.86,refunded
+10252,  Elena Brown ,elena.brown252@example.com,36,INDIA,08-22-2026,118.86,refunded
+10820,Jon Silva,jon.silva820@example.com,51,  Australia ,08-26-2025,278.86,pending
+10091,Elena Rossi,elena.rossi91@example.com,47,australia,07-18-2026,165.02,pending
+10576,FARID SILVA,,31,CANADA,10/07/2026,431.98,pending
+10857,Ben Brown,ben.brown857@example.com,35,INDIA,04 Jul 2025,46.9,refunded
+10588,CHEN KHAN,chen.khan588@example.com,43,brazil,14 Jul 2026,17.33,pending
+10995,  Grace Smith ,grace.smith995@example.com,35,  Canada ,04-20-2026,10.74,paid
+10867,  Elena Khan ,elena.khan867@example.com,40,CANADA,09-14-2025,27.51,refunded
+10155,chen okafor,chen.okafor155@example.com,42,brazil,2026-01-17,395.67,refunded
+10156,Farid Smith,farid.smith156@example.com,53,,12-04-2025,129.74,refunded
+10424,  Hiro Smith ,hiro.smith424@example.com,38,  Australia ,2026-05-26,55.81,pending
+10751,ivy nguyen,ivy.nguyen751@example.com,49,  Nigeria ,02-05-2026,384.4,pending
+10794,jon kim,,45,india,14 Jun 2026,383.02,paid
+10333,  Aisha Okafor ,aisha.okafor333@example.com,72,canada,2025-01-02,106.57,paid
+10076,DIEGO OKAFOR,diego.okafor76@example.com,30,  India ,05-03-2025,363.67,refunded
+10768,Farid Khan,farid.khan768@example.com,75,brazil,2025-11-02,201.46,refunded
+10138,grace rossi,grace.rossi138@example.com,28,vietnam,04-10-2026,389.53,refunded
+10909,elena silva,elena.silva909@example.com,32,Nigeria,16 Jun 2026,258.57,pending
+10114,Hiro Kim,hiro.kim114@example.com,47,AUSTRALIA,13/12/2025,430.77,refunded
+10292,  Chen Brown ,chen.brown292@example.com,56,  India ,02 Feb 2026,,refunded
+10449,Diego Okafor,diego.okafor449@example.com,78,AUSTRALIA,2026-06-11,315.33,paid
+10379,Chen Khan,,43,,2026-02-16,374.15,pending
+10551,  Ben Patel ,ben.patel551@example.com,50,VIETNAM,04 Jul 2025,467.09,pending
+10283,Ivy Patel,ivy.patel283@example.com,48,australia,20 Dec 2025,460.67,paid
+10960,GRACE ROSSI,grace.rossi960@example.com,48,australia,2025-09-10,350.25,refunded
+10655,JON PATEL,jon.patel655@example.com,34,  Vietnam ,2025-04-24,321.2,pending
+10058,Grace Rossi,grace.rossi58@example.com,72,  Nigeria ,22 Aug 2026,7.92,pending
+10104,BEN SMITH,ben.smith104@example.com,62,Vietnam,2026-03-31,165.57,paid
+10061,AISHA SMITH,aisha.smith61@example.com,73,,2026-03-15,133.78,pending
+10385,FARID SILVA,farid.silva385@example.com,79,brazil,04-02-2026,85.94,pending
+10601,  Farid Patel ,farid.patel601@example.com,51,  Canada ,31 Jul 2026,404.95,refunded
+10622,  Farid Okafor ,farid.okafor622@example.com,19,  Australia ,2026-04-10,178.96,pending
+10287,  Grace Patel ,grace.patel287@example.com,43,AUSTRALIA,10 Jul 2025,,pending
+10256,diego brown,diego.brown256@example.com,21,  Nigeria ,12 Apr 2026,12.79,refunded
+10499,Elena Garcia,elena.garcia499@example.com,43,canada,2025-10-22,279.5,paid
+10724,IVY SMITH,ivy.smith724@example.com,67,CANADA,2026-06-11,301.39,paid
+10705,diego silva,diego.silva705@example.com,67,AUSTRALIA,01-16-2026,145.77,paid
+10400,DIEGO PATEL,diego.patel400@example.com,49,AUSTRALIA,14 Aug 2026,318.58,pending
+10676,HIRO ROSSI,hiro.rossi676@example.com,57,Canada,02/09/2025,360.01,refunded
+10800,Ben Rossi,ben.rossi800@example.com,71,VIETNAM,2026-01-18,45.13,refunded
+10048,  Chen Garcia ,chen.garcia48@example.com,61,CANADA,03-07-2026,206.01,paid
+10973,  Farid Smith ,farid.smith973@example.com,73,  Canada ,04/01/2025,17.71,paid
+10608,farid smith,farid.smith608@example.com,71,australia,02 Jun 2025,315.12,paid
+10739,  Ben Rossi ,ben.rossi739@example.com,56,canada,18 Oct 2025,116.81,pending
+10492,aisha garcia,aisha.garcia492@example.com,30,AUSTRALIA,15/06/2026,338.64,pending
+10741,  Hiro Smith ,hiro.smith741@example.com,51,Canada,2026-02-10,75.97,pending
+10861,chen nguyen,chen.nguyen861@example.com,42,australia,01/03/2025,209.35,pending
+10165,  Chen Kim ,chen.kim165@example.com,73,Vietnam,2025-02-23,146.11,paid
+10249,BEN SILVA,ben.silva249@example.com,43,india,09-06-2025,193.43,refunded
+10077,JON KIM,jon.kim77@example.com,36,,13/04/2025,154.62,refunded
+10110,Grace Kim,grace.kim110@example.com,76,  Nigeria ,01-09-2025,388.99,paid
+10878,BEN PATEL,ben.patel878@example.com,74,nigeria,23/09/2025,424.6,paid
+10983,Farid Rossi,farid.rossi983@example.com,37,AUSTRALIA,14 Aug 2026,490.03,pending
+10986,  Ivy Smith ,ivy.smith986@example.com,58,  India ,10-08-2025,353.55,pending
+10633,  Grace Okafor ,grace.okafor633@example.com,42,BRAZIL,27/01/2026,240.06,paid
+10221,Farid Kim,farid.kim221@example.com,59,NIGERIA,2025-03-02,457.05,paid
+10817,  Ben Patel ,ben.patel817@example.com,79,  Brazil ,2025-06-06,430.6,refunded
+10817,  Ben Patel ,ben.patel817@example.com,79,  Brazil ,2025-06-06,430.6,refunded
+10757,  Ben Garcia ,ben.garcia757@example.com,50,canada,11/12/2025,309.34,pending
+10574,  Elena Nguyen ,elena.nguyen574@example.com,74,australia,21/09/2025,80.1,pending
+10572,Hiro Brown,hiro.brown572@example.com,33,nigeria,01-23-2025,247.52,refunded
+10921,diego silva,diego.silva921@example.com,54,brazil,2025-04-22,89.85,refunded
+10392,Grace Okafor,grace.okafor392@example.com,59,brazil,05-24-2025,453.92,pending
+10810,  Ben Brown ,,24,brazil,03-12-2026,131.16,paid
+10438,BEN KHAN,ben.khan438@example.com,65,  Canada ,30/07/2026,257.91,refunded
+10330,  Aisha Rossi ,,73,vietnam,03-12-2025,47.76,pending
+10025,  Hiro Garcia ,hiro.garcia25@example.com,69,Nigeria,2025-03-19,327.81,refunded
+10383,Grace Patel,grace.patel383@example.com,29,INDIA,2026-06-21,,pending
+10853,  Jon Patel ,jon.patel853@example.com,66,  Brazil ,22/05/2025,433.84,pending
+10302,Ben Patel,ben.patel302@example.com,150,CANADA,26/02/2026,128.59,refunded
+10263,  Aisha Garcia ,aisha.garcia263@example.com,77,australia,28/05/2025,284.16,refunded
+10734,elena khan,not-an-email,-5,NIGERIA,2025-12-23,54.06,refunded
+10678,BEN KHAN,ben.khan678@example.com,47,CANADA,01-06-2026,31.27,paid
+10214,ELENA KHAN,elena.khan214@example.com,79,india,05-11-2026,116.31,pending
+10208,farid patel,farid.patel208@example.com,55,  Vietnam ,02-07-2026,240.07,paid
+10722,Farid Brown,farid.brown722@example.com,72,VIETNAM,2026-08-13,77.34,pending
+10839,Grace Garcia,grace.garcia839@example.com,20,nigeria,05 Nov 2025,363.92,refunded
+10536,  Diego Smith ,diego.smith536@example.com,38,AUSTRALIA,08-30-2025,-49.99,pending
+10281,  Farid Patel ,farid.patel281@example.com,79,  Vietnam ,2025-02-15,10.22,pending
+10786,diego khan,diego.khan786@example.com,64,CANADA,09 Aug 2025,94.28,paid
+10069,HIRO PATEL,hiro.patel69@example.com,64,nigeria,22 Mar 2026,235.11,refunded
+10144,  Aisha Rossi ,aisha.rossi144@example.com,76,australia,20 Jan 2025,288.83,refunded
+10825,Chen Khan,chen.khan825@example.com,68,  Brazil ,05-19-2026,121.19,refunded
+10662,hiro smith,hiro.smith662@example.com,39,canada,04 Aug 2026,32.32,refunded
+10900,CHEN GARCIA,chen.garcia900@example.com,71,Vietnam,2025-01-23,416.57,paid
+10419,FARID KHAN,farid.khan419@example.com,48,Brazil,30 Jan 2025,223.14,paid
+10057,Grace Patel,grace.patel57@example.com,44,brazil,08 Aug 2025,210.81,paid
+10414,Elena Kim,elena.kim414@example.com,24,India,04-21-2026,183.31,refunded
+10891,JON SILVA,jon.silva891@example.com,26,Australia,10/07/2025,159.28,pending
+10006,JON OKAFOR,jon.okafor6@example.com,63,Australia,15/08/2026,387.67,paid
+10428,  Ben Nguyen ,ben.nguyen428@example.com,26,  Canada ,2025-06-18,,paid
+10781,chen kim,chen.kim781@example.com,69,VIETNAM,2025-06-27,210.18,paid
+10234,  Jon Nguyen ,jon.nguyen234@example.com,61,Vietnam,27 Jul 2026,,paid
+10577,IVY PATEL,ivy.patel577@example.com,59,NIGERIA,03-17-2026,38.57,refunded
+10436,Aisha Brown,aisha.brown436@example.com,42,India,2025-04-20,103.95,paid
+10316,ELENA GARCIA,elena.garcia316@example.com,65,brazil,2026-06-15,392.98,paid
+10461,BEN KIM,ben.kim461@example.com,38,  Brazil ,03-13-2025,310.09,pending
+10323,ben silva,ben.silva323@example.com,60,CANADA,2025-02-26,11.27,paid
+10764,elena rossi,elena.rossi764@example.com,73,AUSTRALIA,25 Feb 2026,137.13,pending
+10850,farid kim,farid.kim850@example.com,36,Brazil,19/01/2026,75.36,refunded
+10363,  Jon Garcia ,jon.garcia363@example.com,22,australia,2025-06-16,162.76,paid
+10745,Diego Patel,diego.patel745@example.com,65,Australia,31 Jan 2025,340.66,paid
+10342,Chen Smith,chen.smith342@example.com,71,INDIA,13/01/2025,412.72,pending
+10314,Hiro Garcia,hiro.garcia314@example.com,26,  Australia ,03-30-2025,481.81,pending
+10149,  Ben Patel ,ben.patel149@example.com,66,  Nigeria ,05-21-2026,432.8,refunded
+10380,farid nguyen,farid.nguyen380@example.com,999,  Vietnam ,2025-12-12,486.39,paid
+10311,FARID SMITH,farid.smith311@example.com,48,AUSTRALIA,09 Mar 2026,49.22,paid
+10855,Elena Smith,elena.smith855@example.com,54,canada,2025-06-19,323.74,paid
+10877,  Grace Smith ,grace.smith877@example.com,28,NIGERIA,12/10/2025,37.35,paid
+10942,diego smith,diego.smith942@example.com,20,AUSTRALIA,13 Oct 2025,154.26,refunded
+10270,  Ivy Smith ,ivy.smith270@example.com,18,  Vietnam ,29 Nov 2025,390.69,refunded
+10235,Diego Khan,diego.khan235@example.com,45,,2025-03-16,467.62,paid
+10276,FARID KIM,farid.kim276@example.com,38,brazil,18 May 2026,185.68,refunded
+10744,jon rossi,jon.rossi744@example.com,27,Brazil,2026-05-12,129.09,pending
+10799,CHEN ROSSI,chen.rossi799@example.com,67,Brazil,03-20-2025,17.85,refunded
+10427,HIRO SMITH,hiro.smith427@example.com,18,vietnam,04-10-2025,276.11,pending
+10808,  Ivy Smith ,ivy.smith808@example.com,45,  Australia ,10-25-2025,78.56,paid
+10610,GRACE SMITH,grace.smith610@example.com,41,brazil,24/05/2026,264.92,paid
+10670,  Ben Smith ,ben.smith670@example.com,56,NIGERIA,2025-04-27,403.2,pending
+10486,  Jon Kim ,jon.kim486@example.com,54,vietnam,25 Sep 2025,378.71,pending
+10529,DIEGO OKAFOR,diego.okafor529@example.com,21,Nigeria,20/01/2025,486.3,pending
+10334,GRACE SILVA,grace.silva334@example.com,63,Vietnam,2025-03-03,461.03,refunded
+10932,Ivy Nguyen,ivy.nguyen932@example.com,22,  Canada ,19 Apr 2026,175.11,pending
+10679,CHEN SILVA,chen.silva679@example.com,28,Canada,2026-05-25,324.21,pending
+10938,AISHA ROSSI,aisha.rossi938@example.com,41,INDIA,2025-07-26,12.94,paid
+10162,Jon Patel,jon.patel162@example.com,44,VIETNAM,25 Mar 2026,307.24,refunded
+10873,  Hiro Smith ,hiro.smith873@example.com,70,nigeria,28 Dec 2025,92.71,refunded
+10176,HIRO NGUYEN,hiro.nguyen176@example.com,20,India,10-28-2025,467.02,refunded
+10805,grace kim,grace.kim805@example.com,60,australia,15/05/2025,247.36,pending
+10406,Jon Brown,jon.brown406@example.com,41,Canada,23 Jun 2025,438.89,pending
+10944,chen okafor,chen.okafor944@example.com,80,  Canada ,2025-06-29,170.88,refunded
+10197,ELENA KIM,elena.kim197@example.com,69,  Canada ,05-10-2026,229.5,refunded
+10161,IVY NGUYEN,,56,BRAZIL,11/12/2025,94.52,refunded
+10332,DIEGO BROWN,diego.brown332@example.com,18,Brazil,09/09/2025,,refunded
+10159,ivy smith,ivy.smith159@example.com,19,vietnam,10/03/2026,475.83,pending
+10689,  Chen Khan ,chen.khan689@example.com,80,Australia,06 Jan 2025,368.07,refunded
+10585,  Hiro Nguyen ,,80,Canada,09 Sep 2025,260.48,refunded
+10216,ivy rossi,ivy.rossi216@example.com,79,india,2026-02-09,147.38,refunded
+10625,Chen Silva,,39,,29 Jan 2026,,pending
+10308,DIEGO PATEL,diego.patel308@example.com,73,Vietnam,11-06-2025,128.94,pending
+10702,ivy patel,ivy.patel702@example.com,44,Brazil,05-01-2026,98.59,paid
+10106,  Jon Rossi ,jon.rossi106@example.com,76,NIGERIA,04/09/2025,233.27,pending
+10484,  Elena Khan ,elena.khan484@example.com,34,India,2026-07-11,291.1,paid
+10544,  Ivy Rossi ,ivy.rossi544@example.com,67,NIGERIA,07-14-2025,164.69,refunded
+10785,BEN GARCIA,ben.garcia785@example.com,78,vietnam,28 Jul 2025,194.13,pending
+10328,  Chen Patel ,chen.patel328@example.com,32,VIETNAM,06 Feb 2025,458.35,pending
+10313,  Aisha Khan ,aisha.khan313@example.com,999,CANADA,18/06/2025,460.35,refunded
+10514,hiro smith,hiro.smith514@example.com,47,CANADA,26/01/2026,322.09,pending
+10315,Chen Garcia,chen.garcia315@example.com,150,nigeria,2025-10-11,424.71,refunded
+10219,Diego Garcia,diego.garcia219@example.com,44,  Vietnam ,2025-02-23,342.19,paid
+10238,GRACE BROWN,grace.brown238@example.com,71,Australia,05-11-2025,234.19,refunded
+10782,GRACE ROSSI,grace.rossi782@example.com,19,AUSTRALIA,2026-08-08,487.19,paid
+10112,Aisha Kim,aisha.kim112@example.com,55,VIETNAM,2026-03-28,455.27,pending
+10798,elena patel,,54,CANADA,2025-06-22,265.38,refunded
+10199,FARID OKAFOR,farid.okafor199@example.com,66,Vietnam,02-13-2026,124.66,paid
+10188,CHEN OKAFOR,chen.okafor188@example.com,25,INDIA,05/06/2026,396.23,paid
+10843,AISHA SILVA,aisha.silva843@example.com,69,CANADA,12-14-2025,153.1,refunded
+10552,  Ivy Okafor ,ivy.okafor552@example.com,66,  Canada ,01-16-2026,306.16,refunded
+10704,  Ivy Brown ,ivy.brown704@example.com,37,NIGERIA,04-01-2026,90.01,pending
+10468,DIEGO KHAN,diego.khan468@example.com,46,INDIA,19/06/2025,369.28,pending
+10351,Diego Kim,diego.kim351@example.com,66,  India ,07-01-2026,-49.99,paid
+10994,Grace Garcia,grace.garcia994@example.com,33,  Brazil ,02-04-2025,345.55,paid
+10883,  Ben Nguyen ,ben.nguyen883@example.com,69,australia,05-07-2026,127.34,pending
+10948,Chen Kim,chen.kim948@example.com,51,brazil,2025-11-22,118.36,refunded
+10097,Farid Brown,farid.brown97@example.com,36,canada,01 Oct 2025,433.3,pending
+10312,ben okafor,ben.okafor312@example.com,26,BRAZIL,12/01/2026,38.86,refunded
+10690,  Aisha Rossi ,aisha.rossi690@example.com,0,Canada,28 Jun 2026,250.17,paid
+10443,Aisha Patel,aisha.patel443@example.com,67,canada,27 Nov 2025,,refunded
+10779,  Hiro Patel ,hiro.patel779@example.com,30,canada,01-04-2025,290.03,paid
+10068,farid smith,,18,  Brazil ,2026-06-03,219.59,pending
+10184,FARID SILVA,farid.silva184@example.com,51,  Vietnam ,03-20-2025,326.53,paid
+10168,Diego Nguyen,diego.nguyen168@example.com,71,canada,23/11/2025,,pending
+10508,  Farid Rossi ,farid.rossi508@example.com,29,NIGERIA,14/10/2025,408.02,refunded
+10482,grace brown,grace.brown482@example.com,73,  Australia ,07/03/2026,469.52,pending
+10522,jon rossi,,76,  Vietnam ,21/06/2026,403.33,pending
+10915,  Grace Khan ,grace.khan915@example.com,59,NIGERIA,13 Jan 2025,117.65,refunded
+10327,Jon Smith,jon.smith327@example.com,20,AUSTRALIA,2025-08-22,238.52,pending
+10007,diego smith,diego.smith7@example.com,47,canada,25/01/2026,188.24,paid
+10566,Diego Okafor,diego.okafor566@example.com,25,Canada,09/06/2025,474.73,paid
+10187,hiro smith,hiro.smith187@example.com,63,australia,11-24-2025,426.42,refunded
+10969,ben kim,ben.kim969@example.com,19,NIGERIA,07 Mar 2025,245.17,paid
+10775,  Ben Brown ,ben.brown775@example.com,42,  Australia ,08-31-2025,153.94,paid
+10115,Grace Brown,missing-at.com,68,Brazil,01-10-2026,270.6,pending
+10451,Aisha Silva,john@@example,150,Australia,06/12/2025,398.14,refunded
+10641,  Hiro Khan ,hiro.khan641@example.com,40,vietnam,06/12/2025,,refunded
+10317,HIRO ROSSI,hiro.rossi317@example.com,49,Canada,2025-04-26,,pending
+10516,  Farid Kim ,farid.kim516@example.com,35,brazil,01 Oct 2025,209.92,paid
+10575,CHEN SMITH,chen.smith575@example.com,44,INDIA,27 Jan 2026,485.42,refunded
+10695,Aisha Brown,aisha.brown695@example.com,25,brazil,08 Jan 2026,311.47,pending
+10282,DIEGO BROWN,diego.brown282@example.com,46,  Vietnam ,16 Jun 2026,387.31,refunded
+10350,  Aisha Kim ,aisha.kim350@example.com,51,VIETNAM,01/03/2025,54.57,refunded
+10255,AISHA NGUYEN,aisha.nguyen255@example.com,71,CANADA,2026-02-27,355.05,paid
+10545,Farid Smith,farid.smith545@example.com,20,INDIA,2025-04-09,105.03,pending
+10889,aisha silva,aisha.silva889@example.com,55,India,2026-06-14,11.08,refunded
+10271,IVY GARCIA,ivy.garcia271@example.com,61,BRAZIL,09/08/2026,138.11,pending
+10307,  Aisha Nguyen ,aisha.nguyen307@example.com,19,AUSTRALIA,12 Apr 2025,230.98,pending
+10661,  Hiro Silva ,hiro.silva661@example.com,72,Canada,23/03/2026,6.64,refunded
+10188,CHEN OKAFOR,chen.okafor188@example.com,25,INDIA,05/06/2026,396.23,paid
+10291,CHEN KIM,chen.kim291@example.com,38,AUSTRALIA,03-28-2025,62.89,pending
+10527,diego brown,diego.brown527@example.com,59,canada,06 Oct 2025,98.06,paid
+10495,  Diego Khan ,diego.khan495@example.com,77,Brazil,07-19-2025,91.64,refunded
+10520,Ivy Patel,ivy.patel520@example.com,60,vietnam,30 Jan 2025,236.26,refunded
+10337,farid okafor,farid.okafor337@example.com,32,AUSTRALIA,09/04/2026,391.07,refunded
+10181,grace patel,grace.patel181@example.com,46,australia,31 Mar 2026,140.9,paid
+10647,Diego Khan,diego.khan647@example.com,59,Vietnam,2025-12-20,87.96,pending
+10505,IVY OKAFOR,ivy.okafor505@example.com,47,  Australia ,02-08-2026,346.16,paid
+10278,  Hiro Kim ,hiro.kim278@example.com,61,BRAZIL,03-12-2025,124.8,refunded
+10616,Chen Patel,chen.patel616@example.com,18,Nigeria,08/10/2025,273.55,refunded
+10417,  Ben Rossi ,ben.rossi417@example.com,35,  Brazil ,14 Feb 2026,326.18,paid
+10773,  Elena Patel ,elena.patel773@example.com,63,vietnam,2026-01-07,,refunded
+10258,Grace Patel,grace.patel258@example.com,51,INDIA,20/04/2025,311.79,pending
+10001,BEN NGUYEN,ben.nguyen1@example.com,32,India,2025-10-09,297.29,paid
+10468,DIEGO KHAN,diego.khan468@example.com,46,INDIA,19/06/2025,369.28,pending
+10774,aisha nguyen,aisha.nguyen774@example.com,53,brazil,09-03-2025,452.06,refunded
+10630,diego garcia,diego.garcia630@example.com,54,canada,21 Nov 2025,360.31,pending
+10651,hiro garcia,hiro.garcia651@example.com,61,CANADA,07-19-2025,276.07,refunded
+10826,aisha nguyen,aisha.nguyen826@example.com,40,CANADA,03/01/2026,414.83,refunded
+10604,elena kim,elena.kim604@example.com,37,nigeria,2025-03-11,61.35,pending
+10200,ELENA SILVA,elena.silva200@example.com,24,australia,11 Sep 2025,432.76,pending
+10659,aisha smith,aisha.smith659@example.com,67,Brazil,14 Mar 2025,78.68,refunded
+10797,  Ivy Silva ,ivy.silva797@example.com,25,CANADA,2026-04-14,178.05,paid
+10454,farid brown,farid.brown454@example.com,68,canada,2025-04-19,144.35,pending
+10908,GRACE ROSSI,grace.rossi908@example.com,77,vietnam,2026-08-09,71.49,paid
+10738,BEN SILVA,ben.silva738@example.com,49,vietnam,2025-04-23,45.71,pending
+10229,ELENA OKAFOR,elena.okafor229@example.com,79,  India ,15/08/2025,230.21,refunded
+10881,Ivy Silva,ivy.silva881@example.com,43,india,2025-11-20,440.65,paid
+10020,FARID NGUYEN,farid.nguyen20@example.com,55,India,2026-07-22,355.38,paid
+10615,DIEGO OKAFOR,diego.okafor615@example.com,36,vietnam,25 Jul 2025,337.21,pending
+10998,FARID SMITH,farid.smith998@example.com,43,Canada,05 Jul 2026,280.25,refunded
+10441,Elena Silva,elena.silva441@example.com,29,India,01 Jul 2025,25.11,pending
+10205,grace brown,grace.brown205@example.com,70,,07/04/2026,487.67,pending
+10405,  Farid Garcia ,farid.garcia405@example.com,19,INDIA,18/06/2025,109.54,paid
+10975,Farid Nguyen,farid.nguyen975@example.com,80,canada,04 Jan 2026,120.61,pending
+10171,Grace Khan,grace.khan171@example.com,25,Brazil,14/04/2026,360.68,pending
+10906,  Farid Okafor ,farid.okafor906@example.com,63,  Brazil ,06-23-2026,292.69,refunded
+10239,  Ivy Rossi ,ivy.rossi239@example.com,70,INDIA,29 Jun 2026,176.35,pending
+10980,  Hiro Smith ,,23,canada,20/05/2025,466.23,refunded
+10403,  Elena Patel ,elena.patel403@example.com,50,nigeria,16/04/2025,37.32,paid
+10150,Farid Patel,john@@example,48,brazil,03-27-2026,297.75,pending
+10654,Diego Khan,diego.khan654@example.com,23,NIGERIA,05 May 2025,329.92,refunded
+10105,  Elena Okafor ,elena.okafor105@example.com,27,  India ,19/01/2026,89.14,paid
+10202,  Hiro Nguyen ,hiro.nguyen202@example.com,50,BRAZIL,03/04/2025,293.76,paid
+10951,AISHA PATEL,aisha.patel951@example.com,23,INDIA,29/07/2025,256.18,pending
+10978,Hiro Patel,hiro.patel978@example.com,48,CANADA,02/04/2026,109.76,refunded
+10500,HIRO OKAFOR,hiro.okafor500@example.com,75,nigeria,29/12/2025,473.82,refunded
+10467,  Jon Kim ,jon.kim467@example.com,50,Nigeria,18 May 2025,185.11,paid
+10426,FARID OKAFOR,farid.okafor426@example.com,72,brazil,25 Feb 2025,359.75,pending
+10125,CHEN NGUYEN,chen.nguyen125@example.com,55,Vietnam,02/01/2026,136.36,paid
+10621,HIRO SILVA,,27,nigeria,08-26-2025,199.08,refunded
+10272,HIRO PATEL,hiro.patel272@example.com,45,  Vietnam ,03-06-2025,244.69,paid
+10131,grace rossi,grace.rossi131@example.com,45,vietnam,04-08-2025,477.03,refunded
