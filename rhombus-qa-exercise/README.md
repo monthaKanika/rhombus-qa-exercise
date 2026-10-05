@@ -49,7 +49,7 @@ cd ui-tests && npm install && npx playwright install && npx playwright test
 |---|---|---|---|---|
 | Baseline cleaning quality | n/a | n/a | Medium-High | [baseline-cleaning-quality.md](observations/baseline-cleaning-quality.md) |
 | Drop column | TODO | TODO | TODO | `observations/schema-drop-column.md` |
-| Rename column | TODO | TODO | TODO | `observations/schema-rename-column.md` |
+| Rename column | Stopped | No | Medium-High | `observations/schema-rename-column.md` |
 | Type change | TODO | TODO | TODO | `observations/schema-type-change.md` |
 | Add column | TODO | TODO | TODO | `observations/schema-add-column.md` |
 | Combined | TODO | TODO | TODO | `observations/schema-combined.md` |

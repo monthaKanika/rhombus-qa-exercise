@@ -23,10 +23,10 @@ were correct. Problems found:
 | False positive | The AI report called the refund rate "atypical", but my generator picks statuses uniformly at random |
 
 ## Logs / chatbot
-TODO: did the run log or report mention the ambiguous date format?
+The chatbot didn't mention the ambiguous date format. And it states the LLM required non-empty prompt which was not provided.
 
 ## Severity
 Medium to high. The wrong dates look valid, so nothing flags them.
 
 ## Evidence
-TODO: `evidence/baseline-output-check.png`, `evidence/validation-baseline.md`
+TODO: `evidence/baseline_quality_log_1.png`, `evidence/baseline_quality_log_2.md`
