@@ -135,4 +135,4 @@ formats; a preview and undo for chatbot edits; validation when a node is saved; 
 and a "next run at" indicator with a reason whenever a scheduled run is skipped.
 
 ## Demo video
-Not yet recorded. It will walk through the UI tests, API tests and validation script.
+ [Please find video link here.](https://drive.google.com/drive/folders/1DDhWNLwP7--p6cjYV5_fsCBDNMYNxlYr?usp=sharing) It will walk through the UI tests, API tests and validation script.
