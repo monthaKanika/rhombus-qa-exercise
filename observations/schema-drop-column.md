@@ -7,8 +7,11 @@ Uploaded `datasets/schema_drop_column.csv` over `baseline.csv` in S3. The only c
 column `age` removed (7 columns instead of 8). Same 1,050 rows, same values elsewhere.
 
 ## What I expected
-[Write your prediction from BEFORE the run, e.g. "Fails at the step that validates age, with
-a missing-column error." If you did not write one, say so rather than inventing one.]
+*(Written after the first run.)*
+
+`age` is removed from the file. I expected the pipeline to stop (or warn) with a message saying
+the `age` column is missing, and to write no output, because the age-range cleaning rule cannot
+be applied without it.
 
 ## What happened
 - **Pipeline stopped.** It failed at the step `invalid_rows_removed` with

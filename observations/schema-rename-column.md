@@ -8,9 +8,12 @@ column `amount_usd` renamed to `order_amount_usd`. Same 1,050 rows, same values,
 other 7 columns.
 
 ## What I expected
-[Write what you predicted BEFORE the run, e.g. "The pipeline fails with a missing-column
-error and writes nothing to GCS." If you did not write one, say so here rather than
-inventing one.]
+*(Written after the first run.)*
+
+`amount_usd` is renamed to `order_amount_usd`, so the column the pipeline relies on is gone.
+I expected the pipeline to stop (or at least warn) with a message saying `amount_usd` was not found
+and, ideally, that the file now has `order_amount_usd`. I expected nothing to be written to GCS
+from a run that could not find a required column.
 
 ## What happened
 - **Pipeline stopped.** It failed at the step `invalid_rows_removed` with
