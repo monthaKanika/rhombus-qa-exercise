@@ -10,21 +10,23 @@ the platform responded. All data is fake and generated from a fixed seed.
 | Baseline pipeline (S3 -> AI builder -> GCS) | Done |
 | Baseline cleaning-quality analysis | Done |
 | Scheduled run | Blocked: the schedule never triggered (see Deviations) |
-| Schema drift: rename, drop, type change, add column | Run (round 1, see caveat below) |
-| Schema drift: all changes combined | Not yet run |
-| Semantic drift: dollars to cents, day/month swap | Not yet run (datasets ready) |
+| Schema drift: drop, rename, type change, add column, all combined | Run (round 1, see caveats) |
+| Semantic drift: dollars to cents | Run (round 1, on a variant matched to the pipeline) |
+| Semantic drift: day/month swap | Not yet run (dataset ready) |
+| Determinism (same input, repeated runs) | Not yet measured |
+| Round 2: rebuilt pipeline, corrected datasets | Planned |
 | Data validation script | Done and tested |
-| API tests | In progress |
-| UI tests | In progress |
-| Demo video | Not yet recorded |
+| API tests | Completed |
+| UI tests | Completed |
+| Demo video | Recorded |
 
 ## Repository layout
 ```
-datasets/          baseline, 7 drifted files, generator scripts, pipeline outputs
+datasets/          baseline, drifted files, generator scripts, pipeline outputs
 data-validation/   validate.py
 api-tests/         pytest tests against the backend
 ui-tests/          Playwright tests of the pipeline journey
-observations/      one Markdown file per case, with evidence/ screenshots
+observations/      one Markdown file per case, with evidence/ screenshots and validator reports
 ```
 
 ## Setup
@@ -33,12 +35,15 @@ python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 cp .env.example .env        # fill in values; never commit .env or key files
 ```
+If `python` is not found in Git Bash, use the full path to your Python (for example an Anaconda install) or
+run the commands from Anaconda Prompt.
 
 ## Datasets
 ```bash
 cd datasets
-python make_baseline.py     # writes baseline.csv (1,050 rows, 8 columns, seeded)
-python make_drifts.py       # writes the 7 drifted files next to it
+python make_baseline.py                     # writes baseline.csv (1,050 rows, 8 columns, seeded)
+python make_drifts.py                       # writes the 7 drifted files next to it
+python make_semantic_on_combined_schema.py  # writes the cents variant that matches the pipeline's current schema
 ```
 `baseline.csv` has planted defects: 50 exact duplicates, about 5% missing values in `email`,
 `amount_usd` and `country`, four mixed date formats, inconsistent casing and whitespace, and invalid
@@ -52,21 +57,30 @@ emails, ages and amounts. Knowing the defects lets the validator check each one.
 | `schema_add_column.csv` | new column `loyalty_tier` |
 | `schema_combined.csv` | `age` dropped, `amount_usd` renamed, `loyalty_tier` added, `order_id` made text |
 | `semantic_cents.csv` | `amount_usd` now in cents (x100), same name and type |
+| `semantic_cents_combined_schema.csv` | the combined-schema file with `order_amount_usd` in cents |
 | `semantic_date_swap.csv` | day and month swapped in 289 dates, all still valid |
 
 Pipeline outputs downloaded from GCS are saved as `<case>_output.csv`.
 
+Two notes on the data:
+- `loyalty_tier` is now derived from `order_id`. The first version assigned a random tier per row, which made
+  the 50 planted duplicates differ from each other. Round 1 of the add-column and combined cases used that
+  first version, kept as `schema_add_column_v1.csv` and `schema_combined_v1.csv`.
+- By the time of the semantic tests the pipeline had been adapted by the platform's chatbot to the combined
+  schema (no `age`, amount column `order_amount_usd`). The original `semantic_cents.csv` would therefore also be a
+  schema change, so the cents result comes from `semantic_cents_combined_schema.csv`.
+
 ## Data validation
 ```bash
 python data-validation/validate.py --source datasets/baseline.csv --output datasets/baseline_output.csv
-python data-validation/validate.py --source datasets/semantic_cents.csv \
-       --output datasets/semantic_cents_output.csv --reference datasets/baseline_output.csv
+python data-validation/validate.py --source datasets/semantic_cents_combined_schema.csv --output datasets/semantic_cents_output.csv --reference datasets/schema_combined_output.csv --amount-col order_amount_usd
 python data-validation/validate.py --determinism run1.csv run2.csv run3.csv
 ```
-Checks schema, row counts, cleaning rules, determinism, and semantic drift (median amount against the
-baseline output for unit changes; date differences against the baseline output for day/month swaps).
-It exits with code 1 if any check fails. I tested it against the baseline output and against simulated
-cents and date-swap outputs, which it flagged (median ratio 100.00; 35.9% of dates changed).
+Checks schema, row counts, cleaning rules, determinism, and semantic drift: the median amount against a
+reference output (unit changes), the date differences against the reference (day/month swaps), and the output
+size against the reference (silent row loss). Use `--amount-col` when the amount column has been renamed and
+`--report` to save a Markdown table. It exits with code 1 if any check fails. I tested it against the baseline
+output and against simulated cents and date-swap outputs before using it on real runs.
 
 ## API tests
 ```bash
@@ -85,9 +99,15 @@ cd ui-tests && npm install && npx playwright install && npx playwright test
   As a result, what happens to the schedule after a failed run is **not tested** for any case.
 - **The pipeline was modified by the platform's chatbot during testing.** In the rename-column case the
   chatbot edited two node prompts; in the type-change case it set the `deduped` node's column list; in the
-  add-column case I accepted its proposed update and the same file then failed with a different error.
-  Later round 1 results therefore ran on a changed pipeline and may be confounded. Each observation file
-  states the pipeline state it ran on. I plan to rebuild the pipeline and re-run the cases as a clean round 2.
+  add-column case I accepted its proposed update and the same file then failed with a different error; in
+  the combined case it made three more edits before the run passed. Later round 1 results therefore ran on
+  a changed pipeline and may be confounded. Each observation file states the pipeline state it ran on. I
+  plan to rebuild the pipeline and re-run the cases as a clean round 2.
+- **A flaw in my test data affected two cases.** The first versions of `schema_add_column.csv` and
+  `schema_combined.csv` gave duplicate rows different `loyalty_tier` values, so duplicates survived
+  de-duplication. This is my data's fault, not a platform result. It is fixed and will be re-tested in round 2.
+- **Each case was run once on one pipeline.** The results describe what happened in those runs and are not a
+  statistical measure of the platform.
 
 ## Observations summary
 | Case | Pipeline stopped? | Chatbot fix worked? | Severity | Details |
@@ -98,41 +118,35 @@ cd ui-tests && npm install && npx playwright install && npx playwright test
 | Drop column | Yes, at `invalid_rows_removed` | Not recorded | Medium | [schema-drop-column.md](observations/schema-drop-column.md) |
 | Change data type | Yes, at `deduped` | Not confirmed | Medium (confounded) | [schema-type-change.md](observations/schema-type-change.md) |
 | Add column | Yes, at `email_imputed` | No | High | [schema-add-column.md](observations/schema-add-column.md) |
-| All schema changes combined | Not yet run | Not yet run | Not yet run | n/a |
-| Semantic: dollars to cents | Not yet run | Not yet run | Not yet run | n/a |
+| All schema changes combined | No: completed after three chatbot edits | Partly | High | [schema-combined.md](observations/schema-combined.md) |
+| Semantic: dollars to cents | No: completed, 75% of rows removed silently | n/a (no error) | High | [semantic-cents.md](observations/semantic-cents.md) |
 | Semantic: day/month swap | Not yet run | Not yet run | Not yet run | n/a |
 
 ## Top three findings
-1. **Ambiguous dates were resolved silently.** The AI builder read DD/MM/YYYY slash dates as MM/DD, so
-   79 of 949 output rows (8.3%) carry a wrong but valid-looking date. Unambiguous dates, and the dash
-   and text formats, were all correct. I found no warning anywhere. It also left 4 duplicate pairs and
-   12 invalid emails in the output, and filled every missing amount with the same value (253.81).
-2. **The chatbot's fixes did not work, and one made things worse.** For the renamed column it blamed an
-   unrelated node, and its prompt edits left the pipeline failing identically (same generated-code hash).
-   For the added column, I accepted its proposed update and the same file then failed with a different
-   error at the same node ("LLM transform requires a non-empty prompt when code is not provided"), a
-   configuration problem that no longer depends on the data.
-3. **Errors were raw and uninformative, and there is no up-front schema check.** Missing columns surfaced
-   as bare Python messages (`'amount_usd'`, `'age'`), schema changes failed at three different steps
-   (`invalid_rows_removed`, `deduped`, `email_imputed`) without naming the changed column, and every failure
-   was followed by "Pipeline execution completed successfully" at the same timestamp. A node with no prompt
-   and no code was accepted and only failed after the run started.
+1. **Data changes passed silently.** Dollars-to-cents ran with no warning, and the pipeline's own "amount above
+   10,000" rule then deleted 75% of the rows (247 of 1,001). The combined-schema run was logged as successful
+   although the age rule had stopped running, so 19 orders the baseline run removed reached GCS. My validator
+   caught the unit change through the median amount (20.6x) and the row count.
+2. **Chatbot fixes failed or made things worse.** For the renamed column it blamed an unrelated node, and the
+   pipeline failed identically on re-run. After I accepted its update in the add-column case, the same file
+   failed with a new error ("LLM transform requires a non-empty prompt when code is not provided"). In the
+   combined case its fix worked only by making the pipeline tolerate missing columns.
+3. **Failures were opaque, and the scheduler failed silently.** Missing columns surfaced as bare errors
+   (`'age'`, `'amount_usd'`) at three different steps, each followed by "completed successfully". My hourly
+   schedule never ran, and nothing said why.
 
 ## Usability feedback
-Connecting S3 was smooth once I understood the flow: Rhombus generates a scoped read-only policy, which is
-safer than handing over keys, and its error when my policy was missing was specific about what to fix. The
-AI builder's data profile was fast and accurate on duplicates, date formats and out-of-range ages, and the
-pipeline canvas with per-node status made it easy to see where a run stopped.
+**Helpful:** connecting S3 through a generated, scoped read-only policy was safer than sharing keys, and its
+error message told me exactly what was missing. The AI builder's data profile accurately found duplicates, mixed
+date formats and out-of-range ages, and the canvas's per-node status showed where each run stopped.
 
-The frustrating parts were the lack of safety around change. The first AI builder reply was a list of
-recommendations, not a pipeline. Google Cloud Storage requires a long-lived service-account key, which my
-organisation's policy blocks by default, and this differs from the S3 flow. My hourly schedule never ran
-and nothing explained why. Errors were raw exceptions, the log accumulates across runs and shows
-"completed successfully" beside failures, and the chatbot edits pipelines directly, with no preview, diff or
-undo, so one accepted "fix" left a node without a prompt. Helpful additions would be an up-front schema
-check that names the added, removed or renamed columns; a warning when a date column mixes ambiguous
-formats; a preview and undo for chatbot edits; validation when a node is saved; a keyless option for GCS;
-and a "next run at" indicator with a reason whenever a scheduled run is skipped.
+**Frustrating:** the schedule never ran even after the documentation's checklist; errors were raw exceptions
+shown beside "completed successfully"; the chatbot edits pipelines with no preview or undo; GCS needs a
+long-lived service-account key that my organisation's policy blocks; and runs on changed data completed with no
+warning. **Suggestions:** name added, removed, renamed or retyped columns in the run log; say when a rule is
+skipped because its column is missing; warn when the median or row count shifts sharply between runs; add
+preview and undo for chatbot edits; validate nodes on save; offer keyless GCS access; and show the next run
+time with a reason whenever a scheduled run is skipped.
 
 ## Demo video
- [Please find video link here.](https://drive.google.com/drive/folders/1DDhWNLwP7--p6cjYV5_fsCBDNMYNxlYr?usp=sharing) It will walk through the UI tests, API tests and validation script.
+[Please find recorded video here.](https://drive.google.com/drive/folders/1DDhWNLwP7--p6cjYV5_fsCBDNMYNxlYr?usp=sharing) It will walk through the UI tests, API tests and validation script.

@@ -115,16 +115,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>Blocked: the schedule never triggered (see Deviations)</td>
 </tr>
 <tr class="even">
-<td>Schema drift: rename, drop, type change, add column</td>
-<td>Run (round 1, see caveat below)</td>
+<td>Schema drift: drop, rename, type change, add column, all combined</td>
+<td>Run (round 1, see caveats)</td>
 </tr>
 <tr class="odd">
-<td>Schema drift: all changes combined</td>
-<td>Not yet run</td>
+<td>Semantic drift: dollars to cents</td>
+<td>Run (round 1, on a variant matched to the pipeline)</td>
 </tr>
 <tr class="even">
-<td>Semantic drift: dollars to cents, day/month swap</td>
-<td>Not yet run (datasets ready)</td>
+<td>Semantic drift: day/month swap</td>
+<td>Not yet run (dataset ready)</td>
+</tr>
+<tr class="odd">
+<td>Determinism (same input, repeated runs)</td>
+<td>Not yet measured</td>
+</tr>
+<tr class="even">
+<td>Round 2: rebuilt pipeline, corrected datasets</td>
+<td>Planned</td>
 </tr>
 <tr class="odd">
 <td>Data validation script</td>
@@ -132,38 +140,40 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="even">
 <td>API tests</td>
-<td>In progress</td>
+<td>Completed</td>
 </tr>
 <tr class="odd">
 <td>UI tests</td>
-<td>In progress</td>
+<td>Completed</td>
 </tr>
 <tr class="even">
 <td>Demo video</td>
-<td>Not yet recorded</td>
+<td>Recorded</td>
 </tr>
 </tbody>
 </table>
 </section>
 <section id="repository-layout" class="level2">
 <h2 class="anchored" data-anchor-id="repository-layout">Repository layout</h2>
-<pre><code>datasets/          baseline, 7 drifted files, generator scripts, pipeline outputs
+<pre><code>datasets/          baseline, drifted files, generator scripts, pipeline outputs
 data-validation/   validate.py
 api-tests/         pytest tests against the backend
 ui-tests/          Playwright tests of the pipeline journey
-observations/      one Markdown file per case, with evidence/ screenshots</code></pre>
+observations/      one Markdown file per case, with evidence/ screenshots and validator reports</code></pre>
 </section>
 <section id="setup" class="level2">
 <h2 class="anchored" data-anchor-id="setup">Setup</h2>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> <span class="at">-m</span> venv .venv <span class="kw">&amp;&amp;</span> <span class="bu">source</span> .venv/bin/activate</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-r</span> requirements.txt</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> .env.example .env        <span class="co"># fill in values; never commit .env or key files</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>If <code>python</code> is not found in Git Bash, use the full path to your Python (for example an Anaconda install) or run the commands from Anaconda Prompt.</p>
 </section>
 <section id="datasets" class="level2">
 <h2 class="anchored" data-anchor-id="datasets">Datasets</h2>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> datasets</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> make_baseline.py     <span class="co"># writes baseline.csv (1,050 rows, 8 columns, seeded)</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> make_drifts.py       <span class="co"># writes the 7 drifted files next to it</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> make_baseline.py                     <span class="co"># writes baseline.csv (1,050 rows, 8 columns, seeded)</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> make_drifts.py                       <span class="co"># writes the 7 drifted files next to it</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> make_semantic_on_combined_schema.py  <span class="co"># writes the cents variant that matches the pipeline's current schema</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p><code>baseline.csv</code> has planted defects: 50 exact duplicates, about 5% missing values in <code>email</code>, <code>amount_usd</code> and <code>country</code>, four mixed date formats, inconsistent casing and whitespace, and invalid emails, ages and amounts. Knowing the defects lets the validator check each one.</p>
 <table class="caption-top table">
 <colgroup>
@@ -202,20 +212,24 @@ observations/      one Markdown file per case, with evidence/ screenshots</code>
 <td><code>amount_usd</code> now in cents (x100), same name and type</td>
 </tr>
 <tr class="odd">
+<td><code>semantic_cents_combined_schema.csv</code></td>
+<td>the combined-schema file with <code>order_amount_usd</code> in cents</td>
+</tr>
+<tr class="even">
 <td><code>semantic_date_swap.csv</code></td>
 <td>day and month swapped in 289 dates, all still valid</td>
 </tr>
 </tbody>
 </table>
 <p>Pipeline outputs downloaded from GCS are saved as <code>&lt;case&gt;_output.csv</code>.</p>
+<p>Two notes on the data: - <code>loyalty_tier</code> is now derived from <code>order_id</code>. The first version assigned a random tier per row, which made the 50 planted duplicates differ from each other. Round 1 of the add-column and combined cases used that first version, kept as <code>schema_add_column_v1.csv</code> and <code>schema_combined_v1.csv</code>. - By the time of the semantic tests the pipeline had been adapted by the platform’s chatbot to the combined schema (no <code>age</code>, amount column <code>order_amount_usd</code>). The original <code>semantic_cents.csv</code> would therefore also be a schema change, so the cents result comes from <code>semantic_cents_combined_schema.csv</code>.</p>
 </section>
 <section id="data-validation" class="level2">
 <h2 class="anchored" data-anchor-id="data-validation">Data validation</h2>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> data-validation/validate.py <span class="at">--source</span> datasets/baseline.csv <span class="at">--output</span> datasets/baseline_output.csv</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> data-validation/validate.py <span class="at">--source</span> datasets/semantic_cents.csv <span class="dt">\</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>       <span class="at">--output</span> datasets/semantic_cents_output.csv <span class="at">--reference</span> datasets/baseline_output.csv</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> data-validation/validate.py <span class="at">--determinism</span> run1.csv run2.csv run3.csv</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Checks schema, row counts, cleaning rules, determinism, and semantic drift (median amount against the baseline output for unit changes; date differences against the baseline output for day/month swaps). It exits with code 1 if any check fails. I tested it against the baseline output and against simulated cents and date-swap outputs, which it flagged (median ratio 100.00; 35.9% of dates changed).</p>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> data-validation/validate.py <span class="at">--source</span> datasets/semantic_cents_combined_schema.csv <span class="at">--output</span> datasets/semantic_cents_output.csv <span class="at">--reference</span> datasets/schema_combined_output.csv <span class="at">--amount-col</span> order_amount_usd</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> data-validation/validate.py <span class="at">--determinism</span> run1.csv run2.csv run3.csv</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Checks schema, row counts, cleaning rules, determinism, and semantic drift: the median amount against a reference output (unit changes), the date differences against the reference (day/month swaps), and the output size against the reference (silent row loss). Use <code>--amount-col</code> when the amount column has been renamed and <code>--report</code> to save a Markdown table. It exits with code 1 if any check fails. I tested it against the baseline output and against simulated cents and date-swap outputs before using it on real runs.</p>
 </section>
 <section id="api-tests" class="level2">
 <h2 class="anchored" data-anchor-id="api-tests">API tests</h2>
@@ -229,7 +243,9 @@ observations/      one Markdown file per case, with evidence/ screenshots</code>
 <h2 class="anchored" data-anchor-id="deviations-from-the-brief">Deviations from the brief</h2>
 <ul>
 <li><strong>Scheduled runs were not possible.</strong> My hourly schedule never triggered, even after I followed every point in the documentation’s “Why didn’t my schedule run?” checklist (<a href="observations/schedule-did-not-run.md">details</a>). The baseline and all drift runs were started manually. As a result, what happens to the schedule after a failed run is <strong>not tested</strong> for any case.</li>
-<li><strong>The pipeline was modified by the platform’s chatbot during testing.</strong> In the rename-column case the chatbot edited two node prompts; in the type-change case it set the <code>deduped</code> node’s column list; in the add-column case I accepted its proposed update and the same file then failed with a different error. Later round 1 results therefore ran on a changed pipeline and may be confounded. Each observation file states the pipeline state it ran on. I plan to rebuild the pipeline and re-run the cases as a clean round 2.</li>
+<li><strong>The pipeline was modified by the platform’s chatbot during testing.</strong> In the rename-column case the chatbot edited two node prompts; in the type-change case it set the <code>deduped</code> node’s column list; in the add-column case I accepted its proposed update and the same file then failed with a different error; in the combined case it made three more edits before the run passed. Later round 1 results therefore ran on a changed pipeline and may be confounded. Each observation file states the pipeline state it ran on. I plan to rebuild the pipeline and re-run the cases as a clean round 2.</li>
+<li><strong>A flaw in my test data affected two cases.</strong> The first versions of <code>schema_add_column.csv</code> and <code>schema_combined.csv</code> gave duplicate rows different <code>loyalty_tier</code> values, so duplicates survived de-duplication. This is my data’s fault, not a platform result. It is fixed and will be re-tested in round 2.</li>
+<li><strong>Each case was run once on one pipeline.</strong> The results describe what happened in those runs and are not a statistical measure of the platform.</li>
 </ul>
 </section>
 <section id="observations-summary" class="level2">
@@ -289,17 +305,17 @@ observations/      one Markdown file per case, with evidence/ screenshots</code>
 </tr>
 <tr class="odd">
 <td>All schema changes combined</td>
-<td>Not yet run</td>
-<td>Not yet run</td>
-<td>Not yet run</td>
-<td>n/a</td>
+<td>No: completed after three chatbot edits</td>
+<td>Partly</td>
+<td>High</td>
+<td><a href="observations/schema-combined.md">schema-combined.md</a></td>
 </tr>
 <tr class="even">
 <td>Semantic: dollars to cents</td>
-<td>Not yet run</td>
-<td>Not yet run</td>
-<td>Not yet run</td>
-<td>n/a</td>
+<td>No: completed, 75% of rows removed silently</td>
+<td>n/a (no error)</td>
+<td>High</td>
+<td><a href="observations/semantic-cents.md">semantic-cents.md</a></td>
 </tr>
 <tr class="odd">
 <td>Semantic: day/month swap</td>
@@ -314,19 +330,19 @@ observations/      one Markdown file per case, with evidence/ screenshots</code>
 <section id="top-three-findings" class="level2">
 <h2 class="anchored" data-anchor-id="top-three-findings">Top three findings</h2>
 <ol type="1">
-<li><strong>Ambiguous dates were resolved silently.</strong> The AI builder read DD/MM/YYYY slash dates as MM/DD, so 79 of 949 output rows (8.3%) carry a wrong but valid-looking date. Unambiguous dates, and the dash and text formats, were all correct. I found no warning anywhere. It also left 4 duplicate pairs and 12 invalid emails in the output, and filled every missing amount with the same value (253.81).</li>
-<li><strong>The chatbot’s fixes did not work, and one made things worse.</strong> For the renamed column it blamed an unrelated node, and its prompt edits left the pipeline failing identically (same generated-code hash). For the added column, I accepted its proposed update and the same file then failed with a different error at the same node (“LLM transform requires a non-empty prompt when code is not provided”), a configuration problem that no longer depends on the data.</li>
-<li><strong>Errors were raw and uninformative, and there is no up-front schema check.</strong> Missing columns surfaced as bare Python messages (<code>'amount_usd'</code>, <code>'age'</code>), schema changes failed at three different steps (<code>invalid_rows_removed</code>, <code>deduped</code>, <code>email_imputed</code>) without naming the changed column, and every failure was followed by “Pipeline execution completed successfully” at the same timestamp. A node with no prompt and no code was accepted and only failed after the run started.</li>
+<li><strong>Data changes passed silently.</strong> Dollars-to-cents ran with no warning, and the pipeline’s own “amount above 10,000” rule then deleted 75% of the rows (247 of 1,001). The combined-schema run was logged as successful although the age rule had stopped running, so 19 orders the baseline run removed reached GCS. My validator caught the unit change through the median amount (20.6x) and the row count.</li>
+<li><strong>Chatbot fixes failed or made things worse.</strong> For the renamed column it blamed an unrelated node, and the pipeline failed identically on re-run. After I accepted its update in the add-column case, the same file failed with a new error (“LLM transform requires a non-empty prompt when code is not provided”). In the combined case its fix worked only by making the pipeline tolerate missing columns.</li>
+<li><strong>Failures were opaque, and the scheduler failed silently.</strong> Missing columns surfaced as bare errors (<code>'age'</code>, <code>'amount_usd'</code>) at three different steps, each followed by “completed successfully”. My hourly schedule never ran, and nothing said why.</li>
 </ol>
 </section>
 <section id="usability-feedback" class="level2">
 <h2 class="anchored" data-anchor-id="usability-feedback">Usability feedback</h2>
-<p>Connecting S3 was smooth once I understood the flow: Rhombus generates a scoped read-only policy, which is safer than handing over keys, and its error when my policy was missing was specific about what to fix. The AI builder’s data profile was fast and accurate on duplicates, date formats and out-of-range ages, and the pipeline canvas with per-node status made it easy to see where a run stopped.</p>
-<p>The frustrating parts were the lack of safety around change. The first AI builder reply was a list of recommendations, not a pipeline. Google Cloud Storage requires a long-lived service-account key, which my organisation’s policy blocks by default, and this differs from the S3 flow. My hourly schedule never ran and nothing explained why. Errors were raw exceptions, the log accumulates across runs and shows “completed successfully” beside failures, and the chatbot edits pipelines directly, with no preview, diff or undo, so one accepted “fix” left a node without a prompt. Helpful additions would be an up-front schema check that names the added, removed or renamed columns; a warning when a date column mixes ambiguous formats; a preview and undo for chatbot edits; validation when a node is saved; a keyless option for GCS; and a “next run at” indicator with a reason whenever a scheduled run is skipped.</p>
+<p><strong>Helpful:</strong> connecting S3 through a generated, scoped read-only policy was safer than sharing keys, and its error message told me exactly what was missing. The AI builder’s data profile accurately found duplicates, mixed date formats and out-of-range ages, and the canvas’s per-node status showed where each run stopped.</p>
+<p><strong>Frustrating:</strong> the schedule never ran even after the documentation’s checklist; errors were raw exceptions shown beside “completed successfully”; the chatbot edits pipelines with no preview or undo; GCS needs a long-lived service-account key that my organisation’s policy blocks; and runs on changed data completed with no warning. <strong>Suggestions:</strong> name added, removed, renamed or retyped columns in the run log; say when a rule is skipped because its column is missing; warn when the median or row count shifts sharply between runs; add preview and undo for chatbot edits; validate nodes on save; offer keyless GCS access; and show the next run time with a reason whenever a scheduled run is skipped.</p>
 </section>
 <section id="demo-video" class="level2">
 <h2 class="anchored" data-anchor-id="demo-video">Demo video</h2>
-<p><a href="https://drive.google.com/drive/folders/1DDhWNLwP7--p6cjYV5_fsCBDNMYNxlYr?usp=sharing">Please find video link here.</a> It will walk through the UI tests, API tests and validation script.</p>
+<p><a href="https://drive.google.com/drive/folders/1DDhWNLwP7--p6cjYV5_fsCBDNMYNxlYr?usp=sharing">Please find recorded video here.</a> It will walk through the UI tests, API tests and validation script.</p>
 </section>
 </section>
 
