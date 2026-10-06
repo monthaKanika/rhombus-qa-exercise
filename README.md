@@ -16,7 +16,7 @@ the platform responded. All data is fake and generated from a fixed seed.
 | Determinism (same input, repeated runs) | Not yet measured |
 | Round 2: rebuilt pipeline, corrected datasets | Planned |
 | Data validation script | Done and tested |
-| API tests | Completed |
+| API tests | Done (credits endpoint, 8 tests passing) |
 | UI tests | Completed |
 | Demo video | Recorded |
 
@@ -83,9 +83,24 @@ size against the reference (silent row loss). Use `--amount-col` when the amount
 output and against simulated cents and date-swap outputs before using it on real runs.
 
 ## API tests
+Eight tests cover `GET /api/accounts/users/credits`, the backend call I captured in the browser's Network tab:
+the response structure, the field types, cross-field consistency (the balance equals subscription plus purchased
+credits, and the tier and monthly allocation agree between sections), response time, and two negative tests
+(no credentials, and an invalid token, both expected to be rejected with 401 or 403). The tests never assert
+exact credit amounts, because those change with usage. All eight pass against the live API.
+
+Values for `.env` (copy them from the request in the Network tab):
+- `RHOMBUS_API_BASE_URL`: `https://api.rhombusai.com` (the default)
+- `RHOMBUS_API_TOKEN`: the part of the `authorization` header after `Bearer `. It expires after about 24 hours.
+- `RHOMBUS_API_ORG_ID`: the value of the `x-org-id` header
+
 ```bash
-pytest api-tests -v
+python -m pytest api-tests -v
+python api-tests/check_token.py    # if the authenticated tests fail: reports token format, expiry and status, without printing the token
 ```
+The two negative tests need no credentials; the other six are skipped when no token is set. Only this endpoint is
+covered, because it was the one I captured. The pipeline and run-status endpoints are not tested. A screenshot of a
+passing run is in `observations/evidence/api-tests-run.png`.
 
 ## UI tests
 ```bash
@@ -149,4 +164,4 @@ preview and undo for chatbot edits; validate nodes on save; offer keyless GCS ac
 time with a reason whenever a scheduled run is skipped.
 
 ## Demo video
-[Please find recorded video here.](https://drive.google.com/drive/folders/1DDhWNLwP7--p6cjYV5_fsCBDNMYNxlYr?usp=sharing) It will walk through the UI tests, API tests and validation script.
+[Watch the demo video](https://drive.google.com/drive/folders/1DDhWNLwP7--p6cjYV5_fsCBDNMYNxlYr?usp=sharing). It walks through the UI tests, the API tests and the data validation script.
