@@ -31,9 +31,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 BASE = os.getenv("RHOMBUS_API_BASE_URL", "https://api.rhombusai.com").rstrip("/")
-TOKEN = os.getenv("RHOMBUS_API_TOKEN", "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikx1V1BGNDhMN2xLNFoya2tXR1VxSSJ9.eyJlbWFpbCI6Im0ua2FuaWthMTk5QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczovL2xvZ2luLnJob21idXNhaS5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMTIxNjAxODIwMjU4MTU2OTAyNTMiLCJhdWQiOlsiaHR0cHM6Ly9hcGkucmhvbWJ1c2FpLmNvbS8iLCJodHRwczovL3Job21idXNhaS1wcm9kLmF1LmF1dGgwLmNvbS91c2VyaW5mbyJdLCJpYXQiOjE3OTEyNjUyMTIsImV4cCI6MTc5MTM1MTYxMiwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCBvZmZsaW5lX2FjY2VzcyIsImF6cCI6ImhQZ3ZOYWI5dkpraTk5eVd6NjFFSVdOSUdkUFRXOFBRIn0.qSavwDwpQBpdl_y4VdbUSgm7ZNAL8EHtbqpEW2bFpEJTAQkZZ0RG2OwkTWiNS7doyt4vs1DQbJtOAAmtJnhaC7cCUpmAKI4DpehiLIjg2W_eRfiXlzYf6QKEoCvsILZ6gOClfXaL9PoCrkquA_fNgQHDCgBHCYOdxh8lgZT24sBOVDJ9BnbHOguFTxBi1TAU3HVr-Z_XLD18XSPb6QoyjB4RkD280QEGG91pnbp_VZIFiBFL_dKNzQiNvijkpzXPVtC8RnXBoU2Yhd4JH_2P5ddNOQv_0nUibu2opIA60VR9tJE-5EJiPsGM-hAk8RYFiiRCNzzaQaw51Aj3DsSeGA")
+TOKEN = os.getenv("RHOMBUS_API_TOKEN", "xxx")
 COOKIE = os.getenv("RHOMBUS_API_COOKIE", "")
-ORG_ID = os.getenv("RHOMBUS_API_ORG_ID", "678")
+ORG_ID = os.getenv("RHOMBUS_API_ORG_ID", "xxx")
 CREDITS_URL = f"{BASE}/api/accounts/users/credits"
 
 BALANCE_FIELDS = {
