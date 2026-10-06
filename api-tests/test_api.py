@@ -1,12 +1,28 @@
-"""API tests for Rhombus AI. SKELETON: fill in the TODO endpoints.
+"""API tests for Rhombus AI (backend at api.rhombusai.com).
 
-How to find the endpoints: open the Rhombus web app, open browser dev tools >
-Network tab (filter Fetch/XHR), then log in, list pipelines, open one, check a
-run. Copy the request URL, method and the Authorization header.
+Endpoint under test: GET /api/accounts/users/credits (found in the browser's Network tab).
+Observed response shape (values redacted, names and types as seen):
+  {
+    "balance":   {balance, subscription_credits, purchased_credits, tier, monthly_allocation,
+                  topup_enabled, is_unlimited, usage_this_period},
+    "tier_info": {tier, monthly_credits, price_monthly, credit_value},
+    "topup_packages": []
+  }
+The tests check the structure, the field types and the relationships between fields. They never
+assert exact credit amounts, because those change with usage.
 
-Run:  pytest api-tests -v
+Setup (.env, never committed):
+  RHOMBUS_API_BASE_URL   defaults to https://api.rhombusai.com
+  RHOMBUS_API_TOKEN      the token from the request's Authorization header (without "Bearer ")
+  RHOMBUS_API_COOKIE     use this instead if the request is authenticated by a cookie
+  RHOMBUS_API_ORG_ID     the value of the x-org-id header the app sends with every request
+The token expires after about 24 hours; copy a fresh one if the authenticated tests start getting 401.
+
+Run:  python -m pytest api-tests -v
+The two negative tests need no credentials. The authenticated tests are skipped without them.
 """
 import os
+from functools import lru_cache
 
 import pytest
 import requests
@@ -14,36 +30,120 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-BASE = os.getenv("RHOMBUS_API_BASE_URL", "").rstrip("/")
-TOKEN = os.getenv("RHOMBUS_API_TOKEN", "")
+BASE = os.getenv("RHOMBUS_API_BASE_URL", "https://api.rhombusai.com").rstrip("/")
+TOKEN = os.getenv("RHOMBUS_API_TOKEN", "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikx1V1BGNDhMN2xLNFoya2tXR1VxSSJ9.eyJlbWFpbCI6Im0ua2FuaWthMTk5QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczovL2xvZ2luLnJob21idXNhaS5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMTIxNjAxODIwMjU4MTU2OTAyNTMiLCJhdWQiOlsiaHR0cHM6Ly9hcGkucmhvbWJ1c2FpLmNvbS8iLCJodHRwczovL3Job21idXNhaS1wcm9kLmF1LmF1dGgwLmNvbS91c2VyaW5mbyJdLCJpYXQiOjE3OTEyNjUyMTIsImV4cCI6MTc5MTM1MTYxMiwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCBvZmZsaW5lX2FjY2VzcyIsImF6cCI6ImhQZ3ZOYWI5dkpraTk5eVd6NjFFSVdOSUdkUFRXOFBRIn0.qSavwDwpQBpdl_y4VdbUSgm7ZNAL8EHtbqpEW2bFpEJTAQkZZ0RG2OwkTWiNS7doyt4vs1DQbJtOAAmtJnhaC7cCUpmAKI4DpehiLIjg2W_eRfiXlzYf6QKEoCvsILZ6gOClfXaL9PoCrkquA_fNgQHDCgBHCYOdxh8lgZT24sBOVDJ9BnbHOguFTxBi1TAU3HVr-Z_XLD18XSPb6QoyjB4RkD280QEGG91pnbp_VZIFiBFL_dKNzQiNvijkpzXPVtC8RnXBoU2Yhd4JH_2P5ddNOQv_0nUibu2opIA60VR9tJE-5EJiPsGM-hAk8RYFiiRCNzzaQaw51Aj3DsSeGA")
+COOKIE = os.getenv("RHOMBUS_API_COOKIE", "")
+ORG_ID = os.getenv("RHOMBUS_API_ORG_ID", "678")
+CREDITS_URL = f"{BASE}/api/accounts/users/credits"
 
-# TODO: replace with the real paths you saw in the Network tab
-PIPELINES_PATH = "/TODO/pipelines"
-RUNS_PATH = "/TODO/pipelines/{pipeline_id}/runs"
+BALANCE_FIELDS = {
+    "balance", "subscription_credits", "purchased_credits", "tier",
+    "monthly_allocation", "topup_enabled", "is_unlimited", "usage_this_period",
+}
+TIER_INFO_FIELDS = {"tier", "monthly_credits", "price_monthly", "credit_value"}
 
-pytestmark = pytest.mark.skipif(not BASE, reason="set RHOMBUS_API_BASE_URL in .env")
+needs_auth = pytest.mark.skipif(
+    not (TOKEN or COOKIE), reason="set RHOMBUS_API_TOKEN or RHOMBUS_API_COOKIE in .env"
+)
 
 
-def auth():
-    return {"Authorization": f"Bearer {TOKEN}"}  # TODO: match the header format you saw
+def base_headers():
+    headers = {"Accept": "application/json"}
+    if ORG_ID:
+        headers["x-org-id"] = ORG_ID
+    return headers
 
 
-def test_list_pipelines_authenticated():
-    r = requests.get(f"{BASE}{PIPELINES_PATH}", headers=auth(), timeout=30)
+def auth_headers():
+    headers = base_headers()
+    if TOKEN:
+        headers["Authorization"] = f"Bearer {TOKEN}"
+    if COOKIE:
+        headers["Cookie"] = COOKIE
+    return headers
+
+
+@lru_cache(maxsize=1)
+def fetch_credits():
+    """One authenticated call, shared by the tests below."""
+    r = requests.get(CREDITS_URL, headers=auth_headers(), timeout=30)
+    return r
+
+
+def is_int(value):
+    return isinstance(value, int) and not isinstance(value, bool)
+
+
+def is_number(value):
+    return isinstance(value, (int, float)) and not isinstance(value, bool)
+
+
+# ---- positive tests ---------------------------------------------------------
+@needs_auth
+def test_credits_returns_200_json_with_expected_structure():
+    r = fetch_credits()
     assert r.status_code == 200
+    assert "application/json" in r.headers.get("Content-Type", "")
     body = r.json()
-    # TODO: assert on the real response shape, e.g. a list/field you saw
-    assert body is not None
+    assert set(body) >= {"balance", "tier_info", "topup_packages"}
+    assert BALANCE_FIELDS <= set(body["balance"])
+    assert TIER_INFO_FIELDS <= set(body["tier_info"])
 
 
-def test_get_run_status_has_expected_fields():
-    # TODO: use a real pipeline id (read it from the list call above)
-    r = requests.get(f"{BASE}{RUNS_PATH.format(pipeline_id='TODO')}", headers=auth(), timeout=30)
+@needs_auth
+def test_credits_field_types():
+    body = fetch_credits().json()
+    b, t = body["balance"], body["tier_info"]
+    for field in ("balance", "subscription_credits", "purchased_credits",
+                  "monthly_allocation", "usage_this_period"):
+        assert is_int(b[field]), f"balance.{field} should be an integer, got {b[field]!r}"
+    assert isinstance(b["tier"], str) and b["tier"]
+    assert isinstance(b["topup_enabled"], bool)
+    assert isinstance(b["is_unlimited"], bool)
+    assert isinstance(t["tier"], str) and t["tier"]
+    assert is_int(t["monthly_credits"])
+    assert is_number(t["price_monthly"]) and is_number(t["credit_value"])
+    assert isinstance(body["topup_packages"], list)
+
+
+@needs_auth
+def test_credits_balance_is_sum_of_subscription_and_purchased():
+    b = fetch_credits().json()["balance"]
+    assert b["balance"] == b["subscription_credits"] + b["purchased_credits"]
+
+
+@needs_auth
+def test_credits_tier_and_allocation_agree_between_sections():
+    body = fetch_credits().json()
+    assert body["balance"]["tier"] == body["tier_info"]["tier"]
+    assert body["balance"]["monthly_allocation"] == body["tier_info"]["monthly_credits"]
+
+
+@needs_auth
+def test_credits_values_are_not_negative():
+    body = fetch_credits().json()
+    b, t = body["balance"], body["tier_info"]
+    for value in (b["balance"], b["subscription_credits"], b["purchased_credits"],
+                  b["monthly_allocation"], b["usage_this_period"],
+                  t["monthly_credits"], t["price_monthly"], t["credit_value"]):
+        assert value >= 0
+
+
+@needs_auth
+def test_credits_responds_quickly():
+    r = fetch_credits()
     assert r.status_code == 200
-    # TODO: assert on status field values you observed
+    assert r.elapsed.total_seconds() < 5
 
 
-def test_list_pipelines_unauthenticated_is_rejected():  # negative test
-    r = requests.get(f"{BASE}{PIPELINES_PATH}", timeout=30)
+# ---- negative tests ---------------------------------------------------------
+def test_credits_without_credentials_is_rejected():
+    r = requests.get(CREDITS_URL, headers=base_headers(), timeout=30)  # org id, but no credentials
     assert r.status_code in (401, 403)
-    # TODO: also assert on the error body you observed
+
+
+def test_credits_with_invalid_token_is_rejected():
+    headers = {**base_headers(), "Authorization": "Bearer not-a-real-token"}
+    r = requests.get(CREDITS_URL, headers=headers, timeout=30)
+    assert r.status_code in (401, 403)
+    assert r.text  # the server explains the rejection in a response body
