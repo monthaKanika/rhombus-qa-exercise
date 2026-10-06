@@ -140,7 +140,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="even">
 <td>API tests</td>
-<td>Completed</td>
+<td>Done (credits endpoint, 8 tests passing)</td>
 </tr>
 <tr class="odd">
 <td>UI tests</td>
@@ -233,7 +233,11 @@ observations/      one Markdown file per case, with evidence/ screenshots and va
 </section>
 <section id="api-tests" class="level2">
 <h2 class="anchored" data-anchor-id="api-tests">API tests</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pytest</span> api-tests <span class="at">-v</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Eight tests cover <code>GET /api/accounts/users/credits</code>, the backend call I captured in the browser’s Network tab: the response structure, the field types, cross-field consistency (the balance equals subscription plus purchased credits, and the tier and monthly allocation agree between sections), response time, and two negative tests (no credentials, and an invalid token, both expected to be rejected with 401 or 403). The tests never assert exact credit amounts, because those change with usage. All eight pass against the live API.</p>
+<p>Values for <code>.env</code> (copy them from the request in the Network tab): - <code>RHOMBUS_API_BASE_URL</code>: <code>https://api.rhombusai.com</code> (the default) - <code>RHOMBUS_API_TOKEN</code>: the part of the <code>authorization</code> header after <code>Bearer</code>. It expires after about 24 hours. - <code>RHOMBUS_API_ORG_ID</code>: the value of the <code>x-org-id</code> header</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> <span class="at">-m</span> pytest api-tests <span class="at">-v</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> api-tests/check_token.py    <span class="co"># if the authenticated tests fail: reports token format, expiry and status, without printing the token</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The two negative tests need no credentials; the other six are skipped when no token is set. Only this endpoint is covered, because it was the one I captured. The pipeline and run-status endpoints are not tested. A screenshot of a passing run is in <code>observations/evidence/api-tests-run.png</code>.</p>
 </section>
 <section id="ui-tests" class="level2">
 <h2 class="anchored" data-anchor-id="ui-tests">UI tests</h2>
@@ -342,7 +346,7 @@ observations/      one Markdown file per case, with evidence/ screenshots and va
 </section>
 <section id="demo-video" class="level2">
 <h2 class="anchored" data-anchor-id="demo-video">Demo video</h2>
-<p><a href="https://drive.google.com/drive/folders/1DDhWNLwP7--p6cjYV5_fsCBDNMYNxlYr?usp=sharing">Please find recorded video here.</a> It will walk through the UI tests, API tests and validation script.</p>
+<p><a href="https://drive.google.com/drive/folders/1DDhWNLwP7--p6cjYV5_fsCBDNMYNxlYr?usp=sharing">Watch the demo video</a>. It walks through the UI tests, the API tests and the data validation script.</p>
 </section>
 </section>
 

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 320" role="img" aria-label="White F1 TV logo">
+  <title>White F1 TV logo</title>
+  <g fill="#fff" stroke="none">
+    <!-- Smaller, optically centered F1 emblem -->
+    <g transform="translate(34 35) scale(.78 .88)">
+      <path d="M16 250L198 68C242 24 292 8 354 8H884L774 110H374C338 110 311 120 286 145L181 250H16Z"/>
+      <path d="M208 250L311 147C330 128 348 121 377 121H761L651 224H382C365 224 354 229 342 241L333 250H208Z"/>
+      <path d="M642 250L902 8H1080L820 250H642Z"/>
+    </g>
+
+    <!-- TV wordmark -->
+    <path d="M940 42H1190V108H1098V278H1032V108H940Z"/>
+
+    <!-- Clean geometric V -->
+    <path d="M1208 42H1282L1363 236L1444 42H1518L1401 278H1325Z"/>
+  </g>
+</svg>

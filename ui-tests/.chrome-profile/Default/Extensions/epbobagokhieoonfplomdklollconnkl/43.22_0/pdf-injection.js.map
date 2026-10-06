@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/content-scripts/pdf-injection.js"],
+  "sourcesContent": ["document.querySelector(\"embed\").postMessage({ type: \"selectAll\" }, \"*\");\ndocument.querySelector(\"embed\").postMessage({ type: \"getSelectedText\" }, \"*\");\n"],
+  "mappings": "mBAAA,SAAS,cAAc,OAAO,EAAE,YAAY,CAAE,KAAM,WAAY,EAAG,GAAG,EACtE,SAAS,cAAc,OAAO,EAAE,YAAY,CAAE,KAAM,iBAAkB,EAAG,GAAG",
+  "names": []
+}

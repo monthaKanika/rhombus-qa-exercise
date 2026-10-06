@@ -1,6 +1,14 @@
 {
   "name": "rhombus-ui-tests",
   "private": true,
-  "scripts": { "test": "playwright test" },
-  "devDependencies": { "@playwright/test": "^1.48.0", "dotenv": "^16.4.0" }
+  "scripts": {
+    "chrome": "node start-chrome.js",
+    "check": "node check-login.js",
+    "test": "playwright test",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "dotenv": "^16.4.0"
+  }
 }

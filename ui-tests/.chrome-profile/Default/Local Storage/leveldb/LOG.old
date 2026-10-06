@@ -1,0 +1,5 @@
+2026/10/06-18:51:27.214 4b44 Creating DB C:\Users\user\Downloads\rhombus-qa-exercise\ui-tests\.chrome-profile\Default\Local Storage\leveldb since it was missing.
+2026/10/06-18:51:27.245 4b44 Reusing MANIFEST C:\Users\user\Downloads\rhombus-qa-exercise\ui-tests\.chrome-profile\Default\Local Storage\leveldb/MANIFEST-000001
+2026/10/06-19:05:42.854 3fc4 Level-0 table #5: started
+2026/10/06-19:05:42.871 3fc4 Level-0 table #5: 21171 bytes OK
+2026/10/06-19:05:42.877 3fc4 Delete type=0 #3

@@ -1,0 +1,14 @@
+2026/10/06-19:18:03.534 4550 Reusing MANIFEST C:\Users\user\Downloads\rhombus-qa-exercise\ui-tests\.chrome-profile\Default\IndexedDB\chrome-extension_oocalimimngaihdkbihfgmpkcpnmlaoa_0.indexeddb.leveldb/MANIFEST-000001
+2026/10/06-19:18:03.536 4550 Recovering log #10
+2026/10/06-19:18:03.537 4550 Reusing old log C:\Users\user\Downloads\rhombus-qa-exercise\ui-tests\.chrome-profile\Default\IndexedDB\chrome-extension_oocalimimngaihdkbihfgmpkcpnmlaoa_0.indexeddb.leveldb/000010.log 
+2026/10/06-19:18:03.539 4550 Delete type=2 #8
+2026/10/06-19:18:03.553 1b00 Level-0 table #15: started
+2026/10/06-19:18:03.557 1b00 Level-0 table #15: 960 bytes OK
+2026/10/06-19:18:03.560 1b00 Delete type=0 #10
+2026/10/06-19:18:03.561 5b0c Manual compaction at level-0 from '\x00\x06\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x07\x00\x00\x00' @ 0 : 0; will stop at '\x00\x06\x00\x00\x05' @ 198 : 1
+2026/10/06-19:18:03.562 5b0c Compacting 1@0 + 1@1 files
+2026/10/06-19:18:03.566 5b0c Generated table #16@0: 48 keys, 1438 bytes
+2026/10/06-19:18:03.566 5b0c Compacted 1@0 + 1@1 files => 1438 bytes
+2026/10/06-19:18:03.568 5b0c compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/10/06-19:18:03.569 5b0c Delete type=2 #15
+2026/10/06-19:18:03.570 1b00 Manual compaction at level-0 from '\x00\x06\x00\x00\x05' @ 198 : 1 .. '\x00\x07\x00\x00\x00' @ 0 : 0; will stop at (end)

@@ -1,0 +1,1 @@
+var e=e=>{if(!e||typeof e!=`string`)return!1;try{return new URL(e),!0}catch(e){return console.error(e),!1}};export{e as t};

@@ -1,0 +1,6 @@
+2026/10/06-18:55:08.336 20ac Creating DB C:\Users\user\Downloads\rhombus-qa-exercise\ui-tests\.chrome-profile\Default\IndexedDB\https_www.teleparty.com_0.indexeddb.leveldb since it was missing.
+2026/10/06-18:55:08.341 20ac Reusing MANIFEST C:\Users\user\Downloads\rhombus-qa-exercise\ui-tests\.chrome-profile\Default\IndexedDB\https_www.teleparty.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/10/06-18:55:08.463 40a4 Level-0 table #5: started
+2026/10/06-18:55:08.466 40a4 Level-0 table #5: 1274 bytes OK
+2026/10/06-18:55:08.468 40a4 Delete type=0 #3
+2026/10/06-18:55:08.468 20ac Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)

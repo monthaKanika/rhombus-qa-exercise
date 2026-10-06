@@ -1,0 +1,1 @@
+import{mt as e}from"./Grid-D6QJAehc.js";import{K as t}from"./Modal-B6Jh9K2W.js";var n=t((0,e().jsx)(`path`,{d:`M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6z`}),`KeyboardArrowRight`);export{n as t};
