@@ -67,10 +67,12 @@ def age_to_text(rows):
 
 
 def add_tier(rows):
-    rng = random.Random(7)  # deterministic
+    """loyalty_tier is derived from order_id, so duplicate rows (same order_id)
+    stay exact duplicates. (v1 assigned a random tier per row, which made
+    duplicates differ and hid them from de-duplication.)"""
     rows = copy(rows)
     for r in rows:
-        r["loyalty_tier"] = rng.choice(TIERS)
+        r["loyalty_tier"] = TIERS[int(r["order_id"]) % len(TIERS)]
     return rows
 
 

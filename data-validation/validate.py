@@ -29,6 +29,8 @@ EMAIL_RE = re.compile(r"^[^@\s]+@[^@\s]+\.[^@\s]+$")
 ISO_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 AGE_MIN, AGE_MAX = 18, 100          # cleaning rules the pipeline was asked to apply
 AMOUNT_MIN, AMOUNT_MAX = 0, 10_000  # amount must be > MIN and <= MAX
+AMOUNT_COL = "amount_usd"        # override with --amount-col when the column is renamed
+ROW_TOLERANCE = 0.20               # allowed row-count difference vs the reference output
 RATIO_LIMIT = 5.0                   # median amount ratio that signals a unit change
 DATE_DIFF_LIMIT = 0.05              # share of shared order_ids with changed dates
 
@@ -54,8 +56,8 @@ def check_schema(src, out, ref):
     extra = [c for c in out.columns if c not in expected]
     record(not missing, "schema: expected columns present", f"missing={missing}")
     record(not extra, "schema: no unexpected columns", f"extra={extra}")
-    if "amount_usd" in out.columns:
-        num = pd.to_numeric(out["amount_usd"], errors="coerce")
+    if AMOUNT_COL in out.columns:
+        num = pd.to_numeric(out[AMOUNT_COL], errors="coerce")
         record(num.notna().all(), "schema: amount_usd is numeric",
                f"non-numeric={int(num.isna().sum())}")
     if "age" in out.columns:
@@ -63,12 +65,17 @@ def check_schema(src, out, ref):
         record(num.notna().all(), "schema: age is numeric", f"non-numeric={int(num.isna().sum())}")
 
 
-def check_rows(src, out):
+def check_rows(src, out, ref=None):
     unique_src = len(src.drop_duplicates())
     note("rows: source / unique source / output", f"{len(src)} / {unique_src} / {len(out)}")
     record(len(out) > 0, "rows: output is not empty")
     record(len(out) <= unique_src, "rows: output not larger than unique source rows",
            f"output={len(out)} unique_source={unique_src}")
+    if ref is not None and len(ref):
+        ratio = len(out) / len(ref)
+        record(1 - ROW_TOLERANCE <= ratio <= 1 + ROW_TOLERANCE,
+               "rows: output size close to reference (silent row loss?)",
+               f"output={len(out)} reference={len(ref)} ratio={ratio:.2f}")
 
 
 def check_cleaning(out):
@@ -99,8 +106,8 @@ def check_cleaning(out):
         a = pd.to_numeric(out["age"], errors="coerce")
         bad = ~a.between(AGE_MIN, AGE_MAX)
         record(not bad.any(), f"clean: age within {AGE_MIN}-{AGE_MAX}", f"out of range={int(bad.sum())}")
-    if "amount_usd" in out.columns:
-        m = pd.to_numeric(out["amount_usd"], errors="coerce")
+    if AMOUNT_COL in out.columns:
+        m = pd.to_numeric(out[AMOUNT_COL], errors="coerce")
         bad = ~((m > AMOUNT_MIN) & (m <= AMOUNT_MAX))
         record(not bad.any(), f"clean: amount in ({AMOUNT_MIN}, {AMOUNT_MAX}]", f"out of range={int(bad.sum())}")
         top = m.value_counts()
@@ -114,9 +121,9 @@ def check_semantic(out, ref):
     if ref is None:
         note("semantic: skipped", "no --reference given")
         return
-    if "amount_usd" in out.columns and "amount_usd" in ref.columns:
-        a = pd.to_numeric(out["amount_usd"], errors="coerce").median()
-        b = pd.to_numeric(ref["amount_usd"], errors="coerce").median()
+    if AMOUNT_COL in out.columns and AMOUNT_COL in ref.columns:
+        a = pd.to_numeric(out[AMOUNT_COL], errors="coerce").median()
+        b = pd.to_numeric(ref[AMOUNT_COL], errors="coerce").median()
         ratio = a / b if b else float("inf")
         record(1 / RATIO_LIMIT <= ratio <= RATIO_LIMIT,
                "semantic: median amount in line with baseline (unit change?)",
@@ -149,8 +156,11 @@ def main():
     ap.add_argument("--output")
     ap.add_argument("--reference", help="known-good baseline output for comparison")
     ap.add_argument("--determinism", nargs="+", help="output files from repeated runs")
+    ap.add_argument("--amount-col", default="amount_usd", help="name of the amount column in the output (default amount_usd)")
     ap.add_argument("--report", help="write a Markdown report here")
     args = ap.parse_args()
+    global AMOUNT_COL
+    AMOUNT_COL = args.amount_col
 
     if args.determinism:
         determinism(args.determinism)
@@ -158,7 +168,7 @@ def main():
         src, out = load(args.source), load(args.output)
         ref = load(args.reference) if args.reference else None
         check_schema(src, out, ref)
-        check_rows(src, out)
+        check_rows(src, out, ref)
         check_cleaning(out)
         check_semantic(out, ref)
     elif not args.determinism:
